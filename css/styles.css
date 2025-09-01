@@ -1,0 +1,254 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: content-box
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+body{
+    background-color: #111111;
+    font-family: "Roboto", sans-serif;
+    color: white;
+}
+
+
+/*== HEADER ==*/
+
+.logo{
+    height: 70px;
+}
+
+.navBar{
+    display: flex;
+    background-color: #090808;
+    justify-content: space-between;
+    align-items: center;
+    padding: .625rem .9375rem;
+}
+
+.menuNav{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    gap: 1.875rem;
+    
+}
+
+.menuNav li a{
+    color: white;
+    font-weight: bold;
+
+}
+
+.menuNav a{
+    color: white;
+    font-size: 1.1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+/*== BANNER ==*/
+
+.bannerImg{
+    width: 100%;
+    height: 500px;
+    background-image: url(https://media.sitioandino.com.ar/p/b71dfbd91192c462f96c7219cd92e31e/adjuntos/335/imagenes/000/754/0000754494/1200x630/smart/franco-colapinto.png);
+    background-size: cover;
+    background-position: center;
+
+    
+}
+
+
+.bannerTexto h1{
+    font-size: 2rem;
+    font-weight: bold;
+    color: red;
+}
+
+.bannerTexto h2{
+    font-size: 2rem;
+    font-weight: bold;
+    color: white;
+}
+
+.bannerTexto{
+    margin: 20px;
+}
+
+/*== NOTICIAS ==*/
+
+.noticias{
+    margin: 15px;
+}
+
+.noticiasimg{
+    height: 200px;
+    width: 350px;
+}
+
+.noticiaPrincipal img{
+    height: 300px;
+}
+
+.noticias h3{
+    font-size: 1.3rem;
+}
+
+
+/*== FOOTER ==*/
+footer{
+    background-color: #090808;
+}
+
+.logoFooter{
+    height: 70px;
+    margin: 15px;
+}
+
+.redesSociales img{
+    height: 30px;
+    margin: 5px;
+}
+.redesSociales{
+    text-align: center;
+}
+
+footer p{
+    font-size: 0.7rem;
+    text-align: center;
+}
+
+/**== PÁGINA PILOTOS ==*/
+
+/**== PILOTOS ==*/
+.pilotos{
+    margin: 15px
+}
+
+.textoPilotos h1{
+    font-size: 1.5rem;
+}
+
+.tarjeta{
+    background-color: white;
+    border-radius: 15px;
+    padding: 20px;
+    text-align: center;
+    color: black;
+    margin: 30px;
+}
+
+
+.contenedorTarjetas {
+    padding: 20px;
+    gap: 20px;
+}
+
+
+/**== PÁGINA EQUIPOS ==*/
+.equipos{
+    margin: 15px
+}
+
+.textoEquipos h1{
+    font-size: 1.5rem;
+}
+
+/**== PÁGINA CLASIFICACIÓN ==*/
+.clasificacion{
+    width: 90%;
+    margin: 20px auto;
+
+}
+th, td{
+    padding: 7px 15px;
+    text-align: left;
+
+}
+
+th{
+    color: #888;
+    font-size: .9rem;
+    border-bottom: 1px solid #888;
+    padding: 10px;
+}
+
+td{
+    font-weight: bold;
+    font-size: 1rem;
+    border-bottom: 0.5px solid #88888880;
+    padding: 15px 15px;
+}
+
+.clasIcons{
+    height: 30px;
+    border-radius: 90%;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+/*== PÁGINA CALENDARIO ==*/
+.bgcontenedor{
+    background-color: #090808;
+}
+
+.textoCalendario{
+    padding: 15px;
+}
+
+.tarjetaCalendario{
+    width: 300px;
+    border-radius: 15px;
+}
+
+.tarjetaCalendario img{
+    width: 100%;
+    height: auto;
+    padding-bottom: 10px;
+}
+
+.tarjetaCalendario h2{
+    font-size: 1rem;
+    text-align: left;
+    margin-bottom: 8px;
+}
+
+.tarjetasGps{
+    margin: 30px 15px;
+}
+
+/*== PÁGINA FORMULARIO ==*/
+.textoFormulario{
+    padding: 15px;
+}
+
+.formulario{
+    text-align: center;
+}
+
+.formulario input{
+    padding: 3px;
+    border-radius: 10px;
+}
+
+.formulario select{
+    padding: 2px;
+    border-radius: 10px;
+}
+
+.botonSubmit{
+    padding: 5px;
+    margin: 20px 10px;
+}
+
+.newsletterBg{
+    background-image: url(https://soymotor.com/sites/default/files/imagenes/article/alex-alonso1.jpg);
+    width: 100%;
+    height: 500px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
