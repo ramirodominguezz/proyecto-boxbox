@@ -17,11 +17,11 @@ body{
 
 /*== HEADER ==*/
 
-.logo{
+.header__navbarLogo{
     height: 70px;
 }
 
-.navBar{
+.header__navBar{
     display: flex;
     background-color: #090808;
     justify-content: space-between;
@@ -29,7 +29,7 @@ body{
     padding: .625rem .9375rem;
 }
 
-.menuNav{
+.header__menuNav{
     flex: 1;
     display: flex;
     justify-content: center;
@@ -37,15 +37,15 @@ body{
     
 }
 
-.menuNav li a{
+.header__menuNav li a{
     color: white;
     font-weight: bold;
 
 }
 
-.menuNav a{
+.header__menuNav a{
     color: white;
-    font-size: 1.1rem;
+    font-size: 1.125rem;
     font-weight: 600;
     text-transform: uppercase;
 }
