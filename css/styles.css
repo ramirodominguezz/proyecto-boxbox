@@ -513,14 +513,58 @@ footer p{
     font-size: 1.2rem;
 }
 
+
 /**== PÁGINA EQUIPOS ==*/
-.equipos{
-    margin: 15px
-}
 
 .textoEquipos h1{
     font-size: 1.5rem;
 }
+
+.tarjetas__tarjeta--header{
+    display: flex;
+    justify-content: space-between;
+}
+
+.tarjetas__pilotos--equipos{
+    display: flex;
+    gap: 1.25rem;
+    margin: 10px 0 20px 0;
+}
+
+.tarjetas__pilotos--piloto img{
+    width: 1.5rem;
+    border-radius: 25%;
+}
+
+.tarjetas__pilotos--piloto{
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    font-size: 0.9rem;
+    margin-top: -0.625rem;
+}
+
+.tarjetas__auto img{
+    width: 95%;
+}
+
+.tarjetas__pilotos--piloto span{
+    font-weight: bolder;
+    text-transform: uppercase;
+}
+
+.equipos{
+    margin: 15px
+}
+
+.equipos__textoInicio h1{
+    font-size: 1.8rem;
+}
+
+.equipos__textoInicio p{
+    font-size: 1.2rem;
+}
+
 
 /**== PÁGINA CLASIFICACIÓN ==*/
 .clasificacion{
