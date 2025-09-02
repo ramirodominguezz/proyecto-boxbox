@@ -570,8 +570,9 @@ footer p{
 .clasificacion{
     width: 90%;
     margin: 20px auto;
-
+    border-collapse: collapse;
 }
+
 th, td{
     padding: 7px 15px;
     text-align: left;
@@ -583,7 +584,14 @@ th{
     font-size: .9rem;
     border-bottom: 1px solid #888;
     padding: 10px;
+    
 }
+
+tbody tr:hover{
+    background-color: #292929;
+    cursor: pointer;
+}
+
 
 td{
     font-weight: bold;
@@ -600,33 +608,75 @@ td{
 }
 
 /*== PÁGINA CALENDARIO ==*/
-.bgcontenedor{
-    background-color: #090808;
+
+.calendario{
+    display: flex;
+    gap: 1.25rem;
+    justify-content: center;
+    padding: 1.25rem;
+    background-color: #000;
+    flex-wrap: wrap;
 }
 
-.textoCalendario{
-    padding: 15px;
-}
-
-.tarjetaCalendario{
-    width: 300px;
-    border-radius: 15px;
-}
-
-.tarjetaCalendario img{
+.calendario__textoCalendario{
     width: 100%;
-    height: auto;
-    padding-bottom: 10px;
+    margin-bottom: 1rem;
+    font-family: "Orbitron", sans-serif;
 }
 
-.tarjetaCalendario h2{
-    font-size: 1rem;
-    text-align: left;
-    margin-bottom: 8px;
+.calendario__textoCalendario h1{
+    font-size: 2rem;
 }
 
-.tarjetasGps{
-    margin: 30px 15px;
+.calendario__tarjetas{
+    position: relative;
+    width: 15rem;
+    height: 17rem;
+    border-radius: .9375rem;
+    overflow: hidden;
+    margin-bottom: 1.875rem;
+    cursor: pointer;
+}
+
+.calendario__tarjetas--grande{
+    width: 45rem;
+    height: 17rem;
+}
+
+.calendario__contenedor--tarjetas h2{
+    margin: .625rem 0;
+    font-size: 1.5rem;
+}
+
+.calendario__imagen{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(70%);
+    transition: 0.2s ease;
+}
+
+.calendario__imagen:hover{
+    transform: scale(1.05);
+}
+
+.calendario__tarjetas--info {
+    position: absolute;
+    top: 0;
+    left: 0; 
+    width: 100%;
+    padding: .9375rem;
+    font-family: "Orbitron", sans-serif;
+}
+
+.calendario__tarjetas--info h3 {
+    margin: 0;
+    font-size: 1.2rem;
+}
+
+.calendario__tarjetas--info p {
+    margin: 5px 0 0;
+    font-size: 0.8rem;
 }
 
 /*== PÁGINA FORMULARIO ==*/

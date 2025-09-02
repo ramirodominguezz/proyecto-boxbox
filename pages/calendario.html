@@ -25,34 +25,49 @@
 
     <!--Introducción calendario-->
 
-    <section>
-        <div class="bgcontenedor">
-            <div class="textoCalendario">
+    <section class="calendario">
+            <div class="calendario__textoCalendario">
                 <h1>CALENDARIO F1 2025</h1>
                 <p>Descubre el calendario de ésta temporada</p>
             </div>
 
             <!--Tarjetas del gp anterior, siguiente y próximamente-->
-
-            <div class="tarjetasGps">
-                <div class="tarjetaCalendario">
-                    <h2>Anterior</h2>
-                    <img src="https://cdn-3.motorsport.com/images/amp/2wBNZ3q0/s1000/lando-norris-mclaren-oscar-pia.jpg" alt="gphungria">
+            <div class="calendario__contenedor--tarjetas">
+                <h2>Anterior</h2>
+                <div class="calendario__tarjetas">
+                        <img src="../assets/imagenes calendario/zandvoort.jpg" alt="gp zandvoort" class="calendario__imagen">
+                        <div class="calendario__tarjetas--info">
+                            <h3>Zandvoort</h3>
+                            <p>29 - 31 AGO</p>
+                        </div>
                 </div>
+            </div>
 
-                <div class="tarjetaCalendario">
+                <div class="calendario__contenedor--tarjetas">
                     <h2>Siguiente</h2>
-                    <img src="https://img.redbull.com/images/c_limit,w_1500,h_1000/f_auto,q_auto/redbullcom/2024/8/25/ozmgfyvpmj1metxehfzd/gran-premio-holanda-f1-2024-max-verstappen" alt="gpholanda">
+                    <div class="calendario__tarjetas calendario__tarjetas--grande">
+                        
+                        <img src="../assets/imagenes calendario/monza.jpg" alt="gp monza" class="calendario__imagen">
+                            <div class="calendario__tarjetas--info">
+                                <h3>Monza</h3>
+                                <p>05 - 07 SEP</p>
+                            </div>
+                        </div>
                 </div>
 
-                <div class="tarjetaCalendario">
+                <div class="calendario__contenedor--tarjetas">
                     <h2>Próximamente</h2>
-                    <img src="https://imagenes.elpais.com/resizer/v2/DTAKASQSIZG6HFY45SXTRYNEGQ.jpg?auth=7c0e786291fb05c437a78f342ec6b3cf95c6a7191a5f65ea2983cac783062281&width=414" alt="gpholanda">
+                    <div class="calendario__tarjetas">
+                            <img src="../assets/imagenes calendario/azeirbayan.jpg" alt="gp azeirbayan" class="calendario__imagen">
+                            <div class="calendario__tarjetas--info">
+                                    <h3>Azerbaiyán</h3>
+                                    <p>19 - 21 SEP</p>
+                            </div>
+                    </div>
                 </div>
-            
-            </div>    
-        </div>
 
+
+    </section>
         <!--Tarjetas de todos los gps-->
 
         <div class="contenedorTarjetas">
