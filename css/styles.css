@@ -270,18 +270,201 @@ footer p{
 
 /**== PÁGINA PILOTOS ==*/
 
-/**== PILOTOS ==*/
+/**== GRID ==*/
 
+.tarjetas{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px;
+    max-width: 75rem;
+    margin: 0 auto;
+    justify-items: center;
+    margin-top: 1.25rem;
+}
+
+/**== TARJETAS PILOTOS ==*/
+
+/**== MCLAREN ==*/
 .tarjetas__tarjeta--mclaren{
-    width: 34.375rem;
-    height: 17.5rem;
+    width: 31.25rem;
+    height: 12.5rem;
     border-radius: 12px;
     background: linear-gradient(90deg, #d35400 0%, #e67e22 100%);
     position: relative;
     overflow: hidden;
     padding: 1.25rem;
     color: white;
+    cursor: pointer;
+    transition: 0.3s ease;
 }
+
+.tarjetas__tarjeta--mclaren:hover{
+    transform: scale(1.01);
+}
+
+/**== FERRARI ==*/
+.tarjetas__tarjeta--ferrari{
+    width: 31.25rem;
+    height: 12.5rem;
+    border-radius: 12px;
+    background: linear-gradient(90deg, #710006 0%, #ED1131 100%);
+    position: relative;
+    overflow: hidden;
+    padding: 1.25rem;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.tarjetas__tarjeta--ferrari:hover{
+    transform: scale(1.01);
+}
+
+/**== MERCEDES ==*/
+.tarjetas__tarjeta--mercedes{
+    width: 31.25rem;
+    height: 12.5rem;
+    border-radius: 12px;
+    background: linear-gradient(90deg, #007560 0%, #00D7B6 100%);
+    position: relative;
+    overflow: hidden;
+    padding: 1.25rem;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.tarjetas__tarjeta--mercedes:hover{
+    transform: scale(1.01);
+}
+
+/**== RED BULL ==*/
+.tarjetas__tarjeta--redbull{
+    width: 31.25rem;
+    height: 12.5rem;
+    border-radius: 12px;
+    background: linear-gradient(90deg, #003282 0%, #4781D7 100%);
+    position: relative;
+    overflow: hidden;
+    padding: 1.25rem;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.tarjetas__tarjeta--redbull:hover{
+    transform: scale(1.01);
+}
+
+/**== WILLIAMS ==*/
+.tarjetas__tarjeta--williams{
+    width: 31.25rem;
+    height: 12.5rem;
+    border-radius: 12px;
+    background: linear-gradient(90deg, #000681 0%, #1868DB 100%);
+    position: relative;
+    overflow: hidden;
+    padding: 1.25rem;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.tarjetas__tarjeta--williams:hover{
+    transform: scale(1.01);
+}
+
+/**== ASTON MARTIN ==*/
+.tarjetas__tarjeta--astonmartin{
+    width: 31.25rem;
+    height: 12.5rem;
+    border-radius: 12px;
+    background: linear-gradient(90deg, #00482C 0%, #229971 100%);
+    position: relative;
+    overflow: hidden;
+    padding: 1.25rem;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.tarjetas__tarjeta--astonmartin:hover{
+    transform: scale(1.01);
+}
+
+/**== KICK SAUBER ==*/
+.tarjetas__tarjeta--kick{
+    width: 31.25rem;
+    height: 12.5rem;
+    border-radius: 12px;
+    background: linear-gradient(90deg, #006300 0%, #01C00E 100%);
+    position: relative;
+    overflow: hidden;
+    padding: 1.25rem;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.tarjetas__tarjeta--kick:hover{
+    transform: scale(1.01);
+}
+
+/**== VCARB ==*/
+.tarjetas__tarjeta--vcarb{
+    width: 31.25rem;
+    height: 12.5rem;
+    border-radius: 12px;
+    background: linear-gradient(90deg, #2345AB 0%, #6C98FF 100%);
+    position: relative;
+    overflow: hidden;
+    padding: 1.25rem;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.tarjetas__tarjeta--vcarb:hover{
+    transform: scale(1.01);
+}
+
+/**== HAAS ==*/
+.tarjetas__tarjeta--haas{
+    width: 31.25rem;
+    height: 12.5rem;
+    border-radius: 12px;
+    background: linear-gradient(90deg, #4D5052 0%, #9C9FA2 100%);
+    position: relative;
+    overflow: hidden;
+    padding: 1.25rem;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.tarjetas__tarjeta--haas:hover{
+    transform: scale(1.01);
+}
+
+/**== ALPINE ==*/
+.tarjetas__tarjeta--alpine{
+    width: 31.25rem;
+    height: 12.5rem;
+    border-radius: 12px;
+    background: linear-gradient(90deg, #005081 0%, #00A1E8 100%);
+    position: relative;
+    overflow: hidden;
+    padding: 1.25rem;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.tarjetas__tarjeta--alpine:hover{
+    transform: scale(1.01);
+}
+
+/**== INFO TARJETA ==*/
 
 .tarjetas__tarjeta--info{
     position: relative;
@@ -309,17 +492,17 @@ footer p{
     position: absolute;
     bottom: 0;
     right: 1.25rem;
-    height: 95%;
+    width: 45%;
     z-index: 2;
 }
 
 .tarjetas__bandera{
     position: absolute;
     bottom: .625rem;
-    left: .625rem;
+    left: 1.25rem;
     width: 1.75rem;
     height: 1.25rem;
-    border-radius: .25rem;
+    border-radius: .3125rem;
     z-index: 3;
 }
 
