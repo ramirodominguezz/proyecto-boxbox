@@ -115,8 +115,18 @@ body{
 /*== NOTICIAS ==*/
 
 .noticias{
-    margin: 1.25rem;
+    margin: 1.5rem;
 }
+
+.noticias h3{
+    font-size: 1.5rem;
+    font-weight: 600;
+    display: inline-block;
+    border-bottom: .3125rem solid red;
+    padding-bottom: .125rem;
+    margin-bottom: .9375rem;
+}
+
 
 .noticias article{
     position: relative;
@@ -146,13 +156,14 @@ body{
     border-radius: 8px;
 }
 
-.noticias h3{
+.noticias h4{
     position: absolute;
     bottom: 0;
     left: 0;
     right: 0;
     padding: 10px;
     font-size: 1.2rem;
+    font-weight: 500;
     color: #fff;
     background: linear-gradient(to top, rgba(0,0,0,0.7), rgba(0,0,0,0));
     margin: 0;
