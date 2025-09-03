@@ -679,6 +679,89 @@ td{
     font-size: 0.8rem;
 }
 
+
+/*== CALENDARIO ==*/
+
+.calendarioGeneral__tarjetas{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px;
+    max-width: 75rem;
+    margin: 0 auto;
+    justify-items: center;
+    margin-top: 1.25rem;
+    font-family: "Orbitron", sans-serif;
+}
+
+.calendario__tarjeta{
+    width: 31.25rem;
+    border-radius: .75rem;
+    background: #0a0a0a;
+    padding: 1.25rem;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.calendario__tarjeta:hover{
+    transform: scale(1.01);
+}
+
+.calendario__tarjeta--header{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 1rem;
+}
+
+.calendario__pais{
+    margin: 0;
+    font-size: .875rem;
+    color: #bbb;
+    font-weight: 600;
+}
+
+.calendario__pais{
+    display: flex;
+    align-items: center;
+    gap: .625rem;
+    margin: .25rem 0;
+}
+
+.calendario__pais img{
+    width: 1.25rem;
+    border-radius: .125rem;
+}
+
+.calendario__pais h5{
+    margin: 0;
+    font-size: 1.25rem;
+    font-weight: 700;
+}
+
+.calendario__fecha{
+    background: #1e2533;
+    padding: .375rem .75rem;
+    border-radius: .375rem;
+    font-size: .875rem;
+    white-space: nowrap;
+}
+
+.calendario__circuito{
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+.calendario__circuito img{
+    width: 80%;
+    max-width: 21.875rem;
+    height: auto;
+}
+
+.calendarioGeneral{
+    margin-bottom: .9375rem;
+}
+
 /*== PÁGINA FORMULARIO ==*/
 .textoFormulario{
     padding: 15px;
