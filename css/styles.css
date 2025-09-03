@@ -246,26 +246,53 @@ body{
 
 
 /*== FOOTER ==*/
-footer{
+.footer{
     background-color: #090808;
+    padding: 2.5rem 1.25rem;
 }
 
-.logoFooter{
-    height: 70px;
-    margin: 15px;
+.footer__container{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 75rem;
+    margin: auto;
 }
 
-.redesSociales img{
-    height: 30px;
-    margin: 5px;
+.footer__logo img{
+    height: 9.375rem;
 }
-.redesSociales{
+
+.footer h5{
+    font-size: 1.25rem;
+    margin-bottom: .3125rem;
+    font-weight: 500;
+}
+
+.footer__redes ul li a,
+.footer__contacto ul li a {
+    color: #aaa;
+    text-decoration: none;
+}
+
+.footer__redes ul li a:hover{
+    color: red;
+}
+
+.footer__contacto ul li a:hover{
+    color: red;
+}
+
+.footer__abajo{
+    border-top: .0625rem solid #333;
+    margin-top: 1.875rem;
+    padding-top: .9375rem;
     text-align: center;
 }
 
-footer p{
-    font-size: 0.7rem;
-    text-align: center;
+.footer__abajo p{
+    font-size: .875rem;
+    color: #aaa;
 }
 
 /**== PÁGINA PILOTOS ==*/
@@ -837,15 +864,10 @@ label{
 .formulario__contenedor .btn {
     width: 100%;
     font-weight: bold;
-    background-color: #ff3030;
 }
 
 .btn{
     margin-top: 1rem;
-}
-
-.btn:hover{
-    background-color: #fc4141;
 }
 
 .formulario__contenedor input,
