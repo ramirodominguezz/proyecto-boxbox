@@ -139,7 +139,7 @@ body{
     font-family: "Goldman", sans-serif;
     font-weight: bold;
     color: red;
-    text-shadow: 0 0 40px red;
+    text-shadow: 0 0 2.5rem red;
 }
 
 .banner__texto h2{
@@ -169,7 +169,7 @@ body{
 
 .noticias__container article{
     position: relative;
-    border-radius: 8px;
+    border-radius: .5rem;
     overflow: hidden;
     transition: 0.2s ease;
 }
@@ -184,7 +184,7 @@ body{
     height: 13rem;
     object-fit: cover;
     display: block;
-    border-radius: 8px;
+    border-radius: .5rem;
 }
 
 .noticias__imagenPrincipal{
@@ -192,7 +192,7 @@ body{
     height: 100%;
     object-fit: cover;
     display: block;
-    border-radius: 8px;
+    border-radius: .5rem;
 }
 
 .noticias__container h4{
@@ -200,13 +200,13 @@ body{
     bottom: 0;
     left: 0;
     right: 0;
-    padding: 10px;
+    padding: .625rem;
     font-size: 1.2rem;
     font-weight: 500;
     color: #fff;
     background: linear-gradient(to top, rgba(0,0,0,1), rgba(0,0,0,0));
     margin: 0;
-    border-radius: 0 0 8px 8px;
+    border-radius: 0 0 .5rem .5rem;
 }
 
 
@@ -214,7 +214,7 @@ body{
 .noticias__grid-container{
     display: grid;
     grid-template-columns: 2fr 1fr 1fr;
-    grid-template-rows: repeat(2, 200px);
+    grid-template-rows: repeat(2, 12.5rem);
     grid-template-areas: 
     "principal       noticia1    noticia2"
     "principal       noticia3    noticia4"
@@ -302,7 +302,7 @@ body{
 .tarjetas{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 50px;
+    gap: 3.125rem;
     max-width: 75rem;
     margin: 0 auto;
     justify-items: center;
@@ -316,7 +316,7 @@ body{
 .tarjetas__tarjeta--mclaren{
     width: 31.25rem;
     height: 12.5rem;
-    border-radius: 12px;
+    border-radius: .75rem;
     background: linear-gradient(90deg, #d35400 0%, #e67e22 100%);
     position: relative;
     overflow: hidden;
@@ -334,7 +334,7 @@ body{
 .tarjetas__tarjeta--ferrari{
     width: 31.25rem;
     height: 12.5rem;
-    border-radius: 12px;
+    border-radius: .75rem;
     background: linear-gradient(90deg, #710006 0%, #ED1131 100%);
     position: relative;
     overflow: hidden;
@@ -352,7 +352,7 @@ body{
 .tarjetas__tarjeta--mercedes{
     width: 31.25rem;
     height: 12.5rem;
-    border-radius: 12px;
+    border-radius: .75rem;
     background: linear-gradient(90deg, #007560 0%, #00D7B6 100%);
     position: relative;
     overflow: hidden;
@@ -370,7 +370,7 @@ body{
 .tarjetas__tarjeta--redbull{
     width: 31.25rem;
     height: 12.5rem;
-    border-radius: 12px;
+    border-radius: .75rem;
     background: linear-gradient(90deg, #003282 0%, #4781D7 100%);
     position: relative;
     overflow: hidden;
@@ -388,7 +388,7 @@ body{
 .tarjetas__tarjeta--williams{
     width: 31.25rem;
     height: 12.5rem;
-    border-radius: 12px;
+    border-radius: .75rem;
     background: linear-gradient(90deg, #000681 0%, #1868DB 100%);
     position: relative;
     overflow: hidden;
@@ -406,7 +406,7 @@ body{
 .tarjetas__tarjeta--astonmartin{
     width: 31.25rem;
     height: 12.5rem;
-    border-radius: 12px;
+    border-radius: .75rem;
     background: linear-gradient(90deg, #00482C 0%, #229971 100%);
     position: relative;
     overflow: hidden;
@@ -424,7 +424,7 @@ body{
 .tarjetas__tarjeta--kick{
     width: 31.25rem;
     height: 12.5rem;
-    border-radius: 12px;
+    border-radius: .75rem;
     background: linear-gradient(90deg, #006300 0%, #01C00E 100%);
     position: relative;
     overflow: hidden;
@@ -442,7 +442,7 @@ body{
 .tarjetas__tarjeta--vcarb{
     width: 31.25rem;
     height: 12.5rem;
-    border-radius: 12px;
+    border-radius: .75rem;
     background: linear-gradient(90deg, #2345AB 0%, #6C98FF 100%);
     position: relative;
     overflow: hidden;
@@ -460,7 +460,7 @@ body{
 .tarjetas__tarjeta--haas{
     width: 31.25rem;
     height: 12.5rem;
-    border-radius: 12px;
+    border-radius: .75rem;
     background: linear-gradient(90deg, #4D5052 0%, #9C9FA2 100%);
     position: relative;
     overflow: hidden;
@@ -478,7 +478,7 @@ body{
 .tarjetas__tarjeta--alpine{
     width: 31.25rem;
     height: 12.5rem;
-    border-radius: 12px;
+    border-radius: .75rem;
     background: linear-gradient(90deg, #005081 0%, #00A1E8 100%);
     position: relative;
     overflow: hidden;
@@ -529,7 +529,7 @@ body{
 }
 
 .pilotos{
-    margin: 15px
+    margin: .9375rem
 }
 
 .pilotos__textoInicio h1{
@@ -555,7 +555,7 @@ body{
 .tarjetas__pilotos--equipos{
     display: flex;
     gap: 1.25rem;
-    margin: 10px 0 20px 0;
+    margin: .625rem 0 1.25rem 0;
 }
 
 .tarjetas__pilotos--piloto img{
@@ -581,7 +581,7 @@ body{
 }
 
 .equipos{
-    margin: 15px
+    margin: .9375rem
 }
 
 .equipos__textoInicio h1{
@@ -596,12 +596,12 @@ body{
 /**== PÁGINA CLASIFICACIÓN ==*/
 .clasificacion{
     width: 90%;
-    margin: 20px auto;
+    margin: 1.25rem auto;
     border-collapse: collapse;
 }
 
 th, td{
-    padding: 7px 15px;
+    padding: .4375rem .9375rem;
     text-align: left;
 
 }
@@ -609,8 +609,8 @@ th, td{
 th{
     color: #888;
     font-size: .9rem;
-    border-bottom: 1px solid #888;
-    padding: 10px;
+    border-bottom: .0625rem solid #888;
+    padding: .625rem;
     
 }
 
@@ -623,14 +623,14 @@ tbody tr:hover{
 td{
     font-weight: bold;
     font-size: 1rem;
-    border-bottom: 0.5px solid #88888880;
-    padding: 15px 15px;
+    border-bottom: .0313rem solid #88888880;
+    padding: .9375rem .9375rem;
 }
 
 .clasIcons{
-    height: 30px;
+    height: 1.875rem;
     border-radius: 90%;
-    margin-right: 10px;
+    margin-right: .625rem;
     vertical-align: middle;
 }
 
@@ -703,7 +703,7 @@ td{
 }
 
 .calendario__tarjetas--info p {
-    margin: 5px 0 0;
+    margin: .3125rem 0 0;
     font-size: 0.8rem;
 }
 
@@ -713,7 +713,7 @@ td{
 .calendarioGeneral__tarjetas{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 50px;
+    gap: 3.125rem;
     max-width: 75rem;
     margin: 0 auto;
     justify-items: center;
