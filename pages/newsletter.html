@@ -9,32 +9,34 @@
 </head>
 <body>
     
-    <!--Nav-->
-
     <header class="header">
-        <nav class="header__navBar">
-            <a href="#"><img src="../assets/logos/LOGO.png" alt="logoboxbox" class="header__navbarLogo"></a>
-                <ul class="header__menuNav">
-                    <li><a href="../index.html">Inicio</a></li>
-                    <li><a href="pilotos.html">Pilotos</a></li>
-                    <li><a href="equipos.html">Equipos</a></li>
-                    <li><a href="clasificacion.html">Clasificacion</a></li>
-                    <li><a href="calendario.html">Calendario</a></li>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+            <a href="#" class="navbar-brand"><img src="../assets/logos/LOGO.png" alt="logoboxbox" class="header__navbarLogo"></a>
+            <div class="collapse navbar-collapse">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="../index.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="pilotos.html">Pilotos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="equipos.html">Equipos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="clasificacion.html">Clasificacion</a></li>
+                    <li class="nav-item"><a class="nav-link" href="calendario.html">Calendario</a></li>
                 </ul>
             </nav>
+        </div>
+    </div>
     </header>
 
     <!--Introducción formulario-->
 
-    <section class="newsletterBg">
-        <div class="textoFormulario">
+    <section class="formulario">
+        <div class="formulario__textoFormulario">
             <h1>Newsletter de Box, Box</h1>
             <p>¡Te enviaremos información de tu escuderia y piloto favoritos!</p>
         </div>
         
         <!--Formulario-->
 
-        <div class="formulario">
+        <div class="formulario__contenedor ">
             <form action="/submit" method="post">
                 <label for="nombre">Nombre completo</label>
                 <input type="text" name="nombre" id="nombre">
@@ -83,6 +85,7 @@
 
                 <label for="piloto">Otro piloto (opcional)</label>
                 <select name="" id="">
+                    <option value="">---</option>
                     <option value="">Alex Albon</option>
                     <option value="">Andrea Kimi Antonelli</option>
                     <option value="">Carlos Sainz</option>
@@ -105,10 +108,12 @@
                     <option value="">Pierre Gasly</option>
                     <option value="">Yuki Tsunoda</option>
                 </select>
+                <input class="btn btn-primary" type="submit" value="Enviar">
             </form>
 
-            <input type="submit" value="Enviar" class="botonSubmit">
+            
         </div>
+        
     </section>
 
     <!--Footer-->
