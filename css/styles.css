@@ -593,7 +593,7 @@ body{
 
 
 /**== PÁGINA CLASIFICACIÓN ==*/
-.clasificacion{
+.clasificacion__table{
     width: 90%;
     margin: 1.25rem auto;
     border-collapse: collapse;
@@ -626,11 +626,13 @@ td{
     padding: .9375rem .9375rem;
 }
 
-.clasIcons{
-    height: 1.875rem;
+.clasificacion__icons{
+    width: 1.7rem;
     border-radius: 90%;
+    object-fit: contain;
     margin-right: .625rem;
     vertical-align: middle;
+    
 }
 
 /*== PÁGINA CALENDARIO ==*/
@@ -848,6 +850,11 @@ td{
 label{
     display: block;
     margin: .625rem .3125rem;
+    font-weight: 600;
+}
+
+option{
+    font-weight: 500;
 }
 
 .formulario{
