@@ -1,0 +1,80 @@
+.noticias{
+    .noticias__container{
+        padding: .9375rem;
+    }
+        .noticias__container h3{
+            font-size: 1.5rem;
+            font-weight: 600;
+            display: inline-block;
+            border-bottom: .3125rem solid red;
+            padding-bottom: .125rem;
+            margin-bottom: .9375rem;
+            margin-top: 1.25rem;
+        }
+            .noticias__container article{
+                position: relative;
+                border-radius: .5rem;
+                overflow: hidden;
+                transition: 0.2s ease;
+                    &:hover{
+                        transform: scale(1.01);
+                        cursor: pointer;
+                    }
+            }
+                .noticias__noticiasimg{
+                    width: 100%;
+                    height: 13rem;
+                    object-fit: cover;
+                    display: block;
+                    border-radius: .5rem;
+                }
+                    .noticias__imagenPrincipal{
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                        display: block;
+                        border-radius: .5rem;
+                    }
+                        .noticias__container h4{
+                            position: absolute;
+                            bottom: 0;
+                            left: 0;
+                            right: 0;
+                            padding: .625rem;
+                            font-size: 1.2rem;
+                            font-weight: 500;
+                            color: #fff;
+                            background: linear-gradient(to top, rgba(0,0,0,1), rgba(0,0,0,0));
+                            margin: 0;
+                            border-radius: 0 0 .5rem .5rem;
+                        }
+                    
+    
+    .noticias__grid-container{
+        @include grid(2fr 1fr 1fr, repeat(2, 12.5rem), none, none, .9375rem);
+        grid-template-areas:
+        "principal      noticia1    noticia2"
+        "principal      noticia3    noticia4"
+        ;
+    }
+
+    .grid_item1{
+        grid-area: principal;
+    }
+    
+    .grid_item2{
+        grid-area: noticia1;
+    }
+    
+    .grid_item3{
+        grid-area: noticia2;
+    }
+    
+    .grid_item4{
+        grid-area: noticia3;
+    }
+    
+    .grid_item5{
+        grid-area: noticia4;
+    }
+}

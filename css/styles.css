@@ -1,1016 +1,238 @@
-/*== FONTS ==*/
-@import url('https://fonts.googleapis.com/css2?family=Goldman:wght@400;700&family=Orbitron:wght@400..900&family=Rajdhani:wght@300;400;500;600;700&display=swap');
-
-*{
-    padding: 0;
-    margin: 0;
-    text-decoration: none;
-    list-style: none;
-    box-sizing: content-box
-}
-
-body{
-    background-color: #111111;
-    font-family: "Rajdhani", sans-serif;
-    color: white;
-}
-
-/*== HEADER GENERAL ==*/
-
-.header__navbarLogo{
-    height: 4.375rem;
-}
-
-.header__navBar{
-    display: flex;
-    background-color: #090809;
-    justify-content: space-between;
-    align-items: center;
-    padding: .625rem .9375rem;
-}
-
-.header__menuNav{
-    flex: 1;
-    display: flex;
-    justify-content: center;
-    gap: 1.875rem;
-    
-}
-
-.header__menuNav li a{
-    color: white;
-
-}
-
-.header__menuNav a{
-    color: white;
-    font-size: 1.375rem;
-    font-weight: 500;
-    text-transform: uppercase;
-}
-
-.header__menuNav a:hover{
-    color: red;
-}
-
-
-/*== HEADER INDEX ==*/
-
-.header--index{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 1;
-    overflow: hidden;
-}
-
-.header__navbarLogo--index{
-    height: 4.375rem;
-}
-.header__navBar--index{
-    display: flex;
-    background: transparent;
-    justify-content: space-between;
-    align-items: center;
-    padding: .625rem .9375rem;
-}
-
-.header__menuNav--index{
-    flex: 1;
-    display: flex;
-    justify-content: center;
-    gap: 1.875rem;
-    
-}
-
-.header__menuNav--index li a{
-    color: white;
-
-}
-
-.header__menuNav--index a{
-    color: white;
-    font-size: 1.375rem;
-    font-weight: 500;
-    text-transform: uppercase;
-    display: inline-block;
-    transition: transform 0.2s ease, color 0.2s ease;
-}
-
-.header__menuNav--index a:hover{
-    transform: scale(1.1);
-    color: red;
-}
-
-/*== BANNER ==*/
-
-.banner{
-    position: relative;
-    width: 100%;
-    height: 120vh;
-    overflow: hidden;
-}
-
-.banner__video{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    z-index: -1;
-    filter:brightness(40%);
-}
-
-.banner__texto{
-    position: relative;
-    z-index: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-    font-size: 2rem;
-
-}
-
-.banner__texto h1{
-    font-family: "Goldman", sans-serif;
-    font-weight: bold;
-    color: red;
-    text-shadow: 0 0 2.5rem red;
-}
-
-.banner__texto h2{
-    font-family: "Goldman", sans-serif;
-    font-weight: bold;
-    color: white;
-}
-
-
-
-/*== NOTICIAS ==*/
-
-.noticias__container{
-    padding: .9375rem;
-}
-
-.noticias__container h3{
-    font-size: 1.5rem;
-    font-weight: 600;
-    display: inline-block;
-    border-bottom: .3125rem solid red;
-    padding-bottom: .125rem;
-    margin-bottom: .9375rem;
-    margin-top: 1.25rem;
-}
-
-
-.noticias__container article{
-    position: relative;
-    border-radius: .5rem;
-    overflow: hidden;
-    transition: 0.2s ease;
-}
-
-.noticias__container article:hover{
-    transform: scale(1.01);
-    cursor: pointer;
-}
-
-.noticias__noticiasimg{
-    width: 100%;
-    height: 13rem;
-    object-fit: cover;
-    display: block;
-    border-radius: .5rem;
-}
-
-.noticias__imagenPrincipal{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block;
-    border-radius: .5rem;
-}
-
-.noticias__container h4{
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    padding: .625rem;
-    font-size: 1.2rem;
-    font-weight: 500;
-    color: #fff;
-    background: linear-gradient(to top, rgba(0,0,0,1), rgba(0,0,0,0));
-    margin: 0;
-    border-radius: 0 0 .5rem .5rem;
-}
-
-
-/*== GRID NOTICIAS ==*/
-.noticias__grid-container{
-    display: grid;
-    grid-template-columns: 2fr 1fr 1fr;
-    grid-template-rows: repeat(2, 12.5rem);
-    grid-template-areas: 
-    "principal       noticia1    noticia2"
-    "principal       noticia3    noticia4"
-
-    ;
-    gap: .9375rem;
-}
-
-.grid_item1{
-    grid-area: principal;
-}
-
-.grid_item2{
-    grid-area: noticia1;
-}
-
-.grid_item3{
-    grid-area: noticia2;
-}
-
-.grid_item4{
-    grid-area: noticia3;
-}
-
-.grid_item5{
-    grid-area: noticia4;
-}
-
-
-
-/*== FOOTER ==*/
-.footer{
-    background-color: #090808;
-    padding: 2.5rem 1.25rem;
-}
-
-.footer__container{
-    display: flex;
-    justify-content: space-between;
-    max-width: 75rem;
-    margin: auto;
-}
-
-.footer__logo img{
-    height: 8rem;
-}
-
-.footer h5{
-    font-size: 1.25rem;
-    margin-bottom: .3125rem;
-    font-weight: 500;
-}
-
-.footer__redes ul li a,
-.footer__contacto ul li a {
-    color: #aaa;
-    text-decoration: none;
-}
-
-.footer__redes ul li a:hover{
-    color: red;
-}
-
-.footer__contacto ul li a:hover{
-    color: red;
-}
-
-.footer__abajo{
-    border-top: .0625rem solid #333;
-    margin-top: 1.875rem;
-    padding-top: .9375rem;
-    text-align: center;
-}
-
-.footer__abajo p{
-    font-size: .875rem;
-    color: #aaa;
-}
-
-/**== PÁGINA PILOTOS ==*/
-
-/**== GRID ==*/
-
-.tarjetas{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 3.125rem;
-    max-width: 75rem;
-    margin: 0 auto;
-    justify-items: center;
-    margin-top: 1.25rem;
-    font-family: "Orbitron", sans-serif;
-}
-
-/**== TARJETAS PILOTOS ==*/
-
-/**== MCLAREN ==*/
-.tarjetas__tarjeta--mclaren{
-    width: 31.25rem;
-    height: 12.5rem;
-    border-radius: .75rem;
-    background: linear-gradient(90deg, #d35400 0%, #e67e22 100%);
-    position: relative;
-    overflow: hidden;
-    padding: 1.25rem;
-    color: white;
-    cursor: pointer;
-    transition: 0.3s ease;
-}
-
-.tarjetas__tarjeta--mclaren:hover{
-    transform: scale(1.01);
-}
-
-/**== FERRARI ==*/
-.tarjetas__tarjeta--ferrari{
-    width: 31.25rem;
-    height: 12.5rem;
-    border-radius: .75rem;
-    background: linear-gradient(90deg, #710006 0%, #ED1131 100%);
-    position: relative;
-    overflow: hidden;
-    padding: 1.25rem;
-    color: white;
-    cursor: pointer;
-    transition: 0.3s ease;
-}
-
-.tarjetas__tarjeta--ferrari:hover{
-    transform: scale(1.01);
-}
-
-/**== MERCEDES ==*/
-.tarjetas__tarjeta--mercedes{
-    width: 31.25rem;
-    height: 12.5rem;
-    border-radius: .75rem;
-    background: linear-gradient(90deg, #007560 0%, #00D7B6 100%);
-    position: relative;
-    overflow: hidden;
-    padding: 1.25rem;
-    color: white;
-    cursor: pointer;
-    transition: 0.3s ease;
-}
-
-.tarjetas__tarjeta--mercedes:hover{
-    transform: scale(1.01);
-}
-
-/**== RED BULL ==*/
-.tarjetas__tarjeta--redbull{
-    width: 31.25rem;
-    height: 12.5rem;
-    border-radius: .75rem;
-    background: linear-gradient(90deg, #003282 0%, #4781D7 100%);
-    position: relative;
-    overflow: hidden;
-    padding: 1.25rem;
-    color: white;
-    cursor: pointer;
-    transition: 0.3s ease;
-}
-
-.tarjetas__tarjeta--redbull:hover{
-    transform: scale(1.01);
-}
-
-/**== WILLIAMS ==*/
-.tarjetas__tarjeta--williams{
-    width: 31.25rem;
-    height: 12.5rem;
-    border-radius: .75rem;
-    background: linear-gradient(90deg, #000681 0%, #1868DB 100%);
-    position: relative;
-    overflow: hidden;
-    padding: 1.25rem;
-    color: white;
-    cursor: pointer;
-    transition: 0.3s ease;
-}
-
-.tarjetas__tarjeta--williams:hover{
-    transform: scale(1.01);
-}
-
-/**== ASTON MARTIN ==*/
-.tarjetas__tarjeta--astonmartin{
-    width: 31.25rem;
-    height: 12.5rem;
-    border-radius: .75rem;
-    background: linear-gradient(90deg, #00482C 0%, #229971 100%);
-    position: relative;
-    overflow: hidden;
-    padding: 1.25rem;
-    color: white;
-    cursor: pointer;
-    transition: 0.3s ease;
-}
-
-.tarjetas__tarjeta--astonmartin:hover{
-    transform: scale(1.01);
-}
-
-/**== KICK SAUBER ==*/
-.tarjetas__tarjeta--kick{
-    width: 31.25rem;
-    height: 12.5rem;
-    border-radius: .75rem;
-    background: linear-gradient(90deg, #006300 0%, #01C00E 100%);
-    position: relative;
-    overflow: hidden;
-    padding: 1.25rem;
-    color: white;
-    cursor: pointer;
-    transition: 0.3s ease;
-}
-
-.tarjetas__tarjeta--kick:hover{
-    transform: scale(1.01);
-}
-
-/**== VCARB ==*/
-.tarjetas__tarjeta--vcarb{
-    width: 31.25rem;
-    height: 12.5rem;
-    border-radius: .75rem;
-    background: linear-gradient(90deg, #2345AB 0%, #6C98FF 100%);
-    position: relative;
-    overflow: hidden;
-    padding: 1.25rem;
-    color: white;
-    cursor: pointer;
-    transition: 0.3s ease;
-}
-
-.tarjetas__tarjeta--vcarb:hover{
-    transform: scale(1.01);
-}
-
-/**== HAAS ==*/
-.tarjetas__tarjeta--haas{
-    width: 31.25rem;
-    height: 12.5rem;
-    border-radius: .75rem;
-    background: linear-gradient(90deg, #4D5052 0%, #9C9FA2 100%);
-    position: relative;
-    overflow: hidden;
-    padding: 1.25rem;
-    color: white;
-    cursor: pointer;
-    transition: 0.3s ease;
-}
-
-.tarjetas__tarjeta--haas:hover{
-    transform: scale(1.01);
-}
-
-/**== ALPINE ==*/
-.tarjetas__tarjeta--alpine{
-    width: 31.25rem;
-    height: 12.5rem;
-    border-radius: .75rem;
-    background: linear-gradient(90deg, #005081 0%, #00A1E8 100%);
-    position: relative;
-    overflow: hidden;
-    padding: 1.25rem;
-    color: white;
-    cursor: pointer;
-    transition: 0.3s ease;
-}
-
-.tarjetas__tarjeta--alpine:hover{
-    transform: scale(1.01);
-}
-
-/**== INFO TARJETA ==*/
-
-.tarjetas__tarjeta--info{
-    position: relative;
-    z-index: 1;
-}
-
-.tarjetas__equipo{
-    font-size: 1.125rem;
-    color: #ddd;
-    margin-bottom: 1.25rem;
-}
-
-.tarjetas__numero{
-    font-size: 2.3rem;
-    font-weight: bold;
-}
-
-.tarjetas__piloto{
-    position: absolute;
-    bottom: 0;
-    right: 1.25rem;
-    width: 45%;
-    z-index: 2;
-}
-
-.tarjetas__bandera{
-    position: absolute;
-    bottom: .625rem;
-    left: 1.25rem;
-    width: 1.75rem;
-    height: 1.25rem;
-    border-radius: .3125rem;
-    z-index: 3;
-}
-
-.pilotos{
-    margin: .9375rem
-}
-
-.pilotos__textoInicio h1{
-    font-size: 1.8rem;
-}
-
-.pilotos__textoInicio p{
-    font-size: 1.2rem;
-}
-
-
-/**== PÁGINA EQUIPOS ==*/
-
-.textoEquipos h1{
-    font-size: 1.5rem;
-}
-
-.tarjetas__tarjeta--header{
-    display: flex;
-    justify-content: space-between;
-}
-
-.tarjetas__pilotos--equipos{
-    display: flex;
-    gap: 1.25rem;
-    margin: .625rem 0 1.25rem 0;
-}
-
-.tarjetas__pilotos--piloto img{
-    width: 1.5rem;
-    border-radius: 25%;
-}
-
-.tarjetas__pilotos--piloto{
-    display: flex;
-    align-items: center;
-    gap: .5rem;
-    font-size: 0.9rem;
-    margin-top: -0.625rem;
-}
-
-.tarjetas__auto img{
-    width: 95%;
-}
-
-.tarjetas__pilotos--piloto span{
-    font-weight: bolder;
-    text-transform: uppercase;
-}
-
-.equipos{
-    margin: .9375rem
-}
-
-.equipos__textoInicio h1{
-    font-size: 1.8rem;
-}
-
-.equipos__textoInicio p{
-    font-size: 1.2rem;
-}
-
-
-/**== PÁGINA CLASIFICACIÓN ==*/
-.clasificacion__table{
-    width: 90%;
-    margin: 1.25rem auto;
-    border-collapse: collapse;
-}
-
-th, td{
-    padding: .4375rem .9375rem;
-    text-align: left;
-
-}
-
-th{
-    color: #888;
-    font-size: .9rem;
-    border-bottom: .0625rem solid #888;
-    padding: .625rem;
-    
-}
-
-tbody tr:hover{
-    background-color: #292929;
-    cursor: pointer;
-}
-
-
-td{
-    font-weight: bold;
-    font-size: 1rem;
-    border-bottom: .0313rem solid #88888880;
-    padding: .9375rem .9375rem;
-}
-
-.clasificacion__icons{
-    width: 1.7rem;
-    border-radius: 90%;
-    object-fit: contain;
-    margin-right: .625rem;
-    vertical-align: middle;
-    
-}
-
-/*== PÁGINA CALENDARIO ==*/
-
-.calendario{
-    display: flex;
-    gap: 1.25rem;
-    justify-content: center;
-    padding: 1.25rem;
-    background-color: #000;
-    flex-wrap: wrap;
-}
-
-.calendario__textoCalendario{
-    width: 100%;
-    margin-bottom: 1rem;
-    font-family: "Orbitron", sans-serif;
-}
-
-.calendario__textoCalendario h1{
-    font-size: 2rem;
-}
-
-.calendario__tarjetas{
-    position: relative;
-    width: 15rem;
-    height: 17rem;
-    border-radius: .9375rem;
-    overflow: hidden;
-    margin-bottom: 1.875rem;
-    cursor: pointer;
-}
-
-.calendario__tarjetas--grande{
-    width: 45rem;
-    height: 17rem;
-}
-
-.calendario__contenedor--tarjetas h2{
-    margin: .625rem 0;
-    font-size: 1.5rem;
-}
-
-.calendario__imagen{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    filter: brightness(70%);
-    transition: 0.2s ease;
-}
-
-.calendario__imagen:hover{
-    transform: scale(1.05);
-    filter: brightness(90%);
-}
-
-.calendario__tarjetas--info {
-    position: absolute;
-    top: 0;
-    left: 0; 
-    width: 100%;
-    padding: .9375rem;
-    font-family: "Orbitron", sans-serif;
-}
-
-.calendario__tarjetas--info h3 {
-    margin: 0;
-    font-size: 1.2rem;
-}
-
-.calendario__tarjetas--info p {
-    margin: .3125rem 0 0;
-    font-size: 0.8rem;
-}
-
-
-/*== CALENDARIO ==*/
-
-.calendarioGeneral__tarjetas{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 3.125rem;
-    max-width: 75rem;
-    margin: 0 auto;
-    justify-items: center;
-    margin-top: 1.25rem;
-    font-family: "Orbitron", sans-serif;
-}
-
-.calendario__tarjeta{
-    width: 31.25rem;
-    border-radius: .75rem;
-    background: #0a0a0a;
-    padding: 1.25rem;
-    cursor: pointer;
-    transition: 0.2s ease;
-}
-
-.calendario__tarjeta--actual{
-    width: 31.25rem;
-    border-radius: .75rem;
-    background: #a81212;
-    padding: 1.25rem;
-    cursor: pointer;
-    transition: 0.2s ease;
-}
-
-.calendario__tarjeta:hover{
-    transform: scale(1.01);
-}
-
-.calendario__tarjeta--actual:hover{
-    transform: scale(1.01);
-}
-
-.calendario__tarjeta--header{
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    margin-bottom: 1rem;
-}
-
-.calendario__pais{
-    margin: 0;
-    font-size: .875rem;
-    color: #bbb;
-    font-weight: 600;
-}
-
-.calendario__pais{
-    display: flex;
-    align-items: center;
-    gap: .625rem;
-    margin: .25rem 0;
-}
-
-.calendario__pais img{
-    width: 1.25rem;
-    border-radius: .125rem;
-}
-
-.calendario__pais h5{
-    margin: 0;
-    font-size: 1.25rem;
-    font-weight: 700;
-}
-
-.calendario__fecha{
-    background: #1e2533;
-    padding: .375rem .75rem;
-    border-radius: .375rem;
-    font-size: .875rem;
-    white-space: nowrap;
-}
-
-.calendario__circuito{
-    display: flex;
-    justify-content: center;
-    margin-top: 1rem;
-}
-
-.calendario__circuito img{
-    width: 80%;
-    max-width: 21.875rem;
-    height: auto;
-}
-
-.calendarioGeneral{
-    margin-bottom: .9375rem;
-}
-
-/*== PÁGINA FORMULARIO ==*/
-    .formulario{
-    background-image: url(https://soymotor.com/sites/default/files/imagenes/article/alex-alonso1.jpg);
-    width: 100%;
-    height: auto;
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
-.navbar{
-    background-color: #090809;
-}
-
-.nav-link{
-    color: #fff;
-    text-transform: uppercase;
-    text-decoration: none;
-    margin: 0 .4375rem;
-    font-family: "Rajdhani", sans-serif;
-    font-size: 1.375rem;
-    font-weight: 500;
-}
-
-.navbar-nav {
-    margin: auto;
-}
-
-.nav-link:hover {
-    color: red;
-}
-
-.formulario__textoFormulario h1{
-    font-weight: 600;
-    font-family: "Goldman", sans-serif;
-    font-size: 3rem;
-}
-
-.formulario__textoFormulario p{
-    font-family: "Goldman", sans-serif;
-    font-size: 1.1rem;
-}
-
-
-label{
-    display: block;
-    margin: .625rem .3125rem;
-    font-weight: 600;
-}
-
-option{
-    font-weight: 500;
-}
-
-.formulario{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;     
-    min-height: 100vh;
-    text-align: center;
-    position: relative;
-}
-
-.formulario__contenedor {
-    background: #00000099;
-    padding: 1.25rem;
-    border-radius: .75rem;
-    width: 100%;
-    max-width: 21.875rem;
-    margin: 0 auto;
-    box-sizing: border-box;
-    text-align: left;
-    margin-bottom: 1rem;
-}
-
-
-.formulario__contenedor .btn {
-    width: 100%;
-    font-weight: bold;
-}
-
-.btn{
-    margin-top: 1rem;
-}
-
-.formulario__contenedor input,
-.formulario__contenedor select {
-    width: 100%;
-    margin-bottom: .75rem;
-    padding: .5rem;
-    border: none;
-    border-radius: .375rem;
-}
-
-/* MEDIA QUERY PAGINA INDEX */
-
-/* 1024 */
-@media (max-width: 1024px){
-    .banner__video{
-        width: 64rem;
-        object-fit: cover;
-    }
-
-    .banner__texto{
-        text-align: center;
-    }
-
-    .footer__logo img{
-        height: 7rem;
-    }
-}
-
-/* 768 */
-@media (max-width: 768px){
-    .banner__video{
-        width: 48rem;
-        object-fit: cover;
-    }
-
-    .banner__texto{
-        font-size: 1.9rem;
-        text-align: center;
-    }
-
-    .noticias__container h4{
-        font-size: 1.1rem;
-    }
-}
-
-/* 425 */
-@media (max-width: 425px){
-    .banner__video{
-        width: 26.5625rem;
-        object-fit: cover;
-    }
-
-    .header__navbarLogo--index{
-        display: none;
-    }
-    
-    .header__menuNav--index{
-        flex-wrap: wrap;
-        gap: 1.4375rem;
-    }
-
-    .header__menuNav--index li a{
-        font-size: 1.5rem;
-    }
-
-    .noticias__grid-container{
-        display: block;
-    }
-
-    .banner__texto{
-        font-size: 1.6rem;
-    }
-
-    .noticias__container article{
-        margin-bottom: .9375rem;
-    }
-
-    .noticias__imagenPrincipal{
-        height: 13rem;
-    } 
-
-    .footer__container{
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-areas:
-        "logo redes"
-        "logo contacto";
-        gap: .625rem;
-    }
-
-    .footer__logo{
-        grid-area: logo;
-        display: flex;
-        align-items: center;
-    }
-    .footer__redes {
-        grid-area: redes;
-    }
-    .footer__contacto {
-        grid-area: contacto;
-    }
-
-    .footer__logo img{
-        height: 9rem;
-    }
-}
-
-/* 320 */
-@media (max-width: 320px){
-    .banner__video{
-        width: 20rem;
-        object-fit: cover;
-    }
-
-    .header__menuNav--index li a{
-        font-size: 1.3rem;
-    }
-
-    .banner__texto{
-        font-size: 1.3rem;
-    }   
-
-    .footer__logo img{
-        height: 8rem;
-    }
-}
+@import url("https://fonts.googleapis.com/css2?family=Goldman:wght@400;700&family=Orbitron:wght@400..900&family=Rajdhani:wght@300;400;500;600;700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: content-box;
+}
+
+body {
+  background-color: #111111;
+  font-family: "Rajdhani", sans-serif;
+  color: white;
+}
+
+.noticias .noticias__container {
+  padding: 0.9375rem;
+}
+.noticias .noticias__container h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  display: inline-block;
+  border-bottom: 0.3125rem solid red;
+  padding-bottom: 0.125rem;
+  margin-bottom: 0.9375rem;
+  margin-top: 1.25rem;
+}
+.noticias .noticias__container article {
+  position: relative;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  transition: 0.2s ease;
+}
+.noticias .noticias__container article:hover {
+  transform: scale(1.01);
+  cursor: pointer;
+}
+.noticias .noticias__noticiasimg {
+  width: 100%;
+  height: 13rem;
+  object-fit: cover;
+  display: block;
+  border-radius: 0.5rem;
+}
+.noticias .noticias__imagenPrincipal {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  border-radius: 0.5rem;
+}
+.noticias .noticias__container h4 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 0.625rem;
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #fff;
+  background: linear-gradient(to top, rgb(0, 0, 0), rgba(0, 0, 0, 0));
+  margin: 0;
+  border-radius: 0 0 0.5rem 0.5rem;
+}
+.noticias .noticias__grid-container {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  grid-template-rows: repeat(2, 12.5rem);
+  justify-content: none;
+  align-content: none;
+  gap: 0.9375rem;
+  grid-template-areas: "principal      noticia1    noticia2" "principal      noticia3    noticia4";
+}
+.noticias .grid_item1 {
+  grid-area: principal;
+}
+.noticias .grid_item2 {
+  grid-area: noticia1;
+}
+.noticias .grid_item3 {
+  grid-area: noticia2;
+}
+.noticias .grid_item4 {
+  grid-area: noticia3;
+}
+.noticias .grid_item5 {
+  grid-area: noticia4;
+}
+
+.footer {
+  background-color: #090808;
+  padding: 2.5rem 1.25rem;
+}
+.footer .footer__container {
+  display: flex;
+  justify-content: space-between;
+  max-width: 75rem;
+  margin: auto;
+}
+.footer .footer__logo img {
+  height: 8rem;
+}
+.footer .footer h5 {
+  font-size: 1.25rem;
+  margin-bottom: 0.3125rem;
+  font-weight: 500;
+}
+.footer .footer__redes ul li a,
+.footer .footer__contacto ul li a {
+  color: #aaa;
+  text-decoration: none;
+}
+.footer .footer__redes ul li a:hover {
+  color: red;
+}
+.footer .footer__contacto ul li a:hover {
+  color: red;
+}
+.footer .footer__abajo {
+  border-top: 0.0625rem solid #333;
+  margin-top: 1.875rem;
+  padding-top: 0.9375rem;
+  text-align: center;
+}
+.footer .footer__abajo p {
+  font-size: 0.875rem;
+  color: #aaa;
+}
+
+.header .header__navBar {
+  display: flex;
+  background-color: #090809;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.625rem 0.9375rem;
+}
+.header .header__navbarLogo {
+  height: 4.375rem;
+}
+.header .header__menuNav {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  gap: 1.875rem;
+}
+.header .header__menuNav a {
+  color: white;
+  font-size: 1.375rem;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+.header .header__menuNav a:hover {
+  color: red;
+}
+
+.header--index {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+  overflow: hidden;
+}
+.header--index .header__navBar--index {
+  display: flex;
+  background: transparent;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.625rem 0.9375rem;
+}
+.header--index .header__navbarLogo--index {
+  height: 4.375rem;
+}
+.header--index .header__navBar--index {
+  display: flex;
+  background: transparent;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.625rem 0.9375rem;
+}
+.header--index .header__menuNav--index {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  gap: 1.875rem;
+}
+.header--index .header__menuNav--index a {
+  color: white;
+  font-size: 1.375rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  display: inline-block;
+  transition: transform 0.2s ease, color 0.2s ease;
+}
+.header--index .header__menuNav--index a:hover {
+  transform: scale(1.1);
+  color: red;
+}
+
+.banner {
+  position: relative;
+  width: 100%;
+  height: 120vh;
+  overflow: hidden;
+}
+.banner .banner__video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+  filter: brightness(40%);
+}
+.banner .banner__texto {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  font-size: 2rem;
+}
+.banner .banner__texto h1 {
+  font-family: "Goldman", sans-serif;
+  font-weight: bold;
+  color: red;
+  text-shadow: 0 0 2.5rem red;
+}
+.banner .banner__texto h2 {
+  font-family: "Goldman", sans-serif;
+  font-weight: bold;
+  color: white;
+}
+
+/*# sourceMappingURL=styles.css.map */

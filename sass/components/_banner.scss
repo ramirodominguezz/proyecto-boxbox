@@ -1,0 +1,38 @@
+.banner{
+    position: relative;
+    width: 100%;
+    height: 120vh;
+    overflow: hidden;
+
+    .banner__video{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        z-index: -1;
+        filter:brightness(40%);
+    }
+        .banner__texto{
+            position: relative;
+            z-index: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            font-size: 2rem;
+        }
+            .banner__texto h1{
+                font-family: "Goldman", sans-serif;
+                font-weight: bold;
+                color: $color-principal;
+                text-shadow: 0 0 2.5rem $color-principal;
+            }
+                .banner__texto h2{
+                    font-family: "Goldman", sans-serif;
+                    font-weight: bold;
+                    color: white;
+                }
+}

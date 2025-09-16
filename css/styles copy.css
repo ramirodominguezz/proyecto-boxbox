@@ -1,0 +1,759 @@
+/*== NOTICIAS ==*/
+
+
+/*== GRID NOTICIAS ==*/
+.noticias__grid-container{
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    grid-template-rows: repeat(2, 12.5rem);
+    grid-template-areas: 
+    "principal       noticia1    noticia2"
+    "principal       noticia3    noticia4"
+
+    ;
+    gap: .9375rem;
+}
+
+.grid_item1{
+    grid-area: principal;
+}
+
+.grid_item2{
+    grid-area: noticia1;
+}
+
+.grid_item3{
+    grid-area: noticia2;
+}
+
+.grid_item4{
+    grid-area: noticia3;
+}
+
+.grid_item5{
+    grid-area: noticia4;
+}
+
+
+
+
+/**== PÁGINA PILOTOS ==*/
+
+/**== GRID ==*/
+
+.tarjetas{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3.125rem;
+    max-width: 75rem;
+    margin: 0 auto;
+    justify-items: center;
+    margin-top: 1.25rem;
+    font-family: "Orbitron", sans-serif;
+}
+
+/**== TARJETAS PILOTOS ==*/
+
+/**== MCLAREN ==*/
+.tarjetas__tarjeta--mclaren{
+    width: 31.25rem;
+    height: 12.5rem;
+    border-radius: .75rem;
+    background: linear-gradient(90deg, #d35400 0%, #e67e22 100%);
+    position: relative;
+    overflow: hidden;
+    padding: 1.25rem;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.tarjetas__tarjeta--mclaren:hover{
+    transform: scale(1.01);
+}
+
+/**== FERRARI ==*/
+.tarjetas__tarjeta--ferrari{
+    width: 31.25rem;
+    height: 12.5rem;
+    border-radius: .75rem;
+    background: linear-gradient(90deg, #710006 0%, #ED1131 100%);
+    position: relative;
+    overflow: hidden;
+    padding: 1.25rem;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.tarjetas__tarjeta--ferrari:hover{
+    transform: scale(1.01);
+}
+
+/**== MERCEDES ==*/
+.tarjetas__tarjeta--mercedes{
+    width: 31.25rem;
+    height: 12.5rem;
+    border-radius: .75rem;
+    background: linear-gradient(90deg, #007560 0%, #00D7B6 100%);
+    position: relative;
+    overflow: hidden;
+    padding: 1.25rem;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.tarjetas__tarjeta--mercedes:hover{
+    transform: scale(1.01);
+}
+
+/**== RED BULL ==*/
+.tarjetas__tarjeta--redbull{
+    width: 31.25rem;
+    height: 12.5rem;
+    border-radius: .75rem;
+    background: linear-gradient(90deg, #003282 0%, #4781D7 100%);
+    position: relative;
+    overflow: hidden;
+    padding: 1.25rem;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.tarjetas__tarjeta--redbull:hover{
+    transform: scale(1.01);
+}
+
+/**== WILLIAMS ==*/
+.tarjetas__tarjeta--williams{
+    width: 31.25rem;
+    height: 12.5rem;
+    border-radius: .75rem;
+    background: linear-gradient(90deg, #000681 0%, #1868DB 100%);
+    position: relative;
+    overflow: hidden;
+    padding: 1.25rem;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.tarjetas__tarjeta--williams:hover{
+    transform: scale(1.01);
+}
+
+/**== ASTON MARTIN ==*/
+.tarjetas__tarjeta--astonmartin{
+    width: 31.25rem;
+    height: 12.5rem;
+    border-radius: .75rem;
+    background: linear-gradient(90deg, #00482C 0%, #229971 100%);
+    position: relative;
+    overflow: hidden;
+    padding: 1.25rem;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.tarjetas__tarjeta--astonmartin:hover{
+    transform: scale(1.01);
+}
+
+/**== KICK SAUBER ==*/
+.tarjetas__tarjeta--kick{
+    width: 31.25rem;
+    height: 12.5rem;
+    border-radius: .75rem;
+    background: linear-gradient(90deg, #006300 0%, #01C00E 100%);
+    position: relative;
+    overflow: hidden;
+    padding: 1.25rem;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.tarjetas__tarjeta--kick:hover{
+    transform: scale(1.01);
+}
+
+/**== VCARB ==*/
+.tarjetas__tarjeta--vcarb{
+    width: 31.25rem;
+    height: 12.5rem;
+    border-radius: .75rem;
+    background: linear-gradient(90deg, #2345AB 0%, #6C98FF 100%);
+    position: relative;
+    overflow: hidden;
+    padding: 1.25rem;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.tarjetas__tarjeta--vcarb:hover{
+    transform: scale(1.01);
+}
+
+/**== HAAS ==*/
+.tarjetas__tarjeta--haas{
+    width: 31.25rem;
+    height: 12.5rem;
+    border-radius: .75rem;
+    background: linear-gradient(90deg, #4D5052 0%, #9C9FA2 100%);
+    position: relative;
+    overflow: hidden;
+    padding: 1.25rem;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.tarjetas__tarjeta--haas:hover{
+    transform: scale(1.01);
+}
+
+/**== ALPINE ==*/
+.tarjetas__tarjeta--alpine{
+    width: 31.25rem;
+    height: 12.5rem;
+    border-radius: .75rem;
+    background: linear-gradient(90deg, #005081 0%, #00A1E8 100%);
+    position: relative;
+    overflow: hidden;
+    padding: 1.25rem;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.tarjetas__tarjeta--alpine:hover{
+    transform: scale(1.01);
+}
+
+/**== INFO TARJETA ==*/
+
+.tarjetas__tarjeta--info{
+    position: relative;
+    z-index: 1;
+}
+
+.tarjetas__equipo{
+    font-size: 1.125rem;
+    color: #ddd;
+    margin-bottom: 1.25rem;
+}
+
+.tarjetas__numero{
+    font-size: 2.3rem;
+    font-weight: bold;
+}
+
+.tarjetas__piloto{
+    position: absolute;
+    bottom: 0;
+    right: 1.25rem;
+    width: 45%;
+    z-index: 2;
+}
+
+.tarjetas__bandera{
+    position: absolute;
+    bottom: .625rem;
+    left: 1.25rem;
+    width: 1.75rem;
+    height: 1.25rem;
+    border-radius: .3125rem;
+    z-index: 3;
+}
+
+.pilotos{
+    margin: .9375rem
+}
+
+.pilotos__textoInicio h1{
+    font-size: 1.8rem;
+}
+
+.pilotos__textoInicio p{
+    font-size: 1.2rem;
+}
+
+
+/**== PÁGINA EQUIPOS ==*/
+
+.textoEquipos h1{
+    font-size: 1.5rem;
+}
+
+.tarjetas__tarjeta--header{
+    display: flex;
+    justify-content: space-between;
+}
+
+.tarjetas__pilotos--equipos{
+    display: flex;
+    gap: 1.25rem;
+    margin: .625rem 0 1.25rem 0;
+}
+
+.tarjetas__pilotos--piloto img{
+    width: 1.5rem;
+    border-radius: 25%;
+}
+
+.tarjetas__pilotos--piloto{
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    font-size: 0.9rem;
+    margin-top: -0.625rem;
+}
+
+.tarjetas__auto img{
+    width: 95%;
+}
+
+.tarjetas__pilotos--piloto span{
+    font-weight: bolder;
+    text-transform: uppercase;
+}
+
+.equipos{
+    margin: .9375rem
+}
+
+.equipos__textoInicio h1{
+    font-size: 1.8rem;
+}
+
+.equipos__textoInicio p{
+    font-size: 1.2rem;
+}
+
+
+/**== PÁGINA CLASIFICACIÓN ==*/
+.clasificacion__table{
+    width: 90%;
+    margin: 1.25rem auto;
+    border-collapse: collapse;
+}
+
+th, td{
+    padding: .4375rem .9375rem;
+    text-align: left;
+
+}
+
+th{
+    color: #888;
+    font-size: .9rem;
+    border-bottom: .0625rem solid #888;
+    padding: .625rem;
+    
+}
+
+tbody tr:hover{
+    background-color: #292929;
+    cursor: pointer;
+}
+
+
+td{
+    font-weight: bold;
+    font-size: 1rem;
+    border-bottom: .0313rem solid #88888880;
+    padding: .9375rem .9375rem;
+}
+
+.clasificacion__icons{
+    width: 1.7rem;
+    border-radius: 90%;
+    object-fit: contain;
+    margin-right: .625rem;
+    vertical-align: middle;
+    
+}
+
+/*== PÁGINA CALENDARIO ==*/
+
+.calendario{
+    display: flex;
+    gap: 1.25rem;
+    justify-content: center;
+    padding: 1.25rem;
+    background-color: #000;
+    flex-wrap: wrap;
+}
+
+.calendario__textoCalendario{
+    width: 100%;
+    margin-bottom: 1rem;
+    font-family: "Orbitron", sans-serif;
+}
+
+.calendario__textoCalendario h1{
+    font-size: 2rem;
+}
+
+.calendario__tarjetas{
+    position: relative;
+    width: 15rem;
+    height: 17rem;
+    border-radius: .9375rem;
+    overflow: hidden;
+    margin-bottom: 1.875rem;
+    cursor: pointer;
+}
+
+.calendario__tarjetas--grande{
+    width: 45rem;
+    height: 17rem;
+}
+
+.calendario__contenedor--tarjetas h2{
+    margin: .625rem 0;
+    font-size: 1.5rem;
+}
+
+.calendario__imagen{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(70%);
+    transition: 0.2s ease;
+}
+
+.calendario__imagen:hover{
+    transform: scale(1.05);
+    filter: brightness(90%);
+}
+
+.calendario__tarjetas--info {
+    position: absolute;
+    top: 0;
+    left: 0; 
+    width: 100%;
+    padding: .9375rem;
+    font-family: "Orbitron", sans-serif;
+}
+
+.calendario__tarjetas--info h3 {
+    margin: 0;
+    font-size: 1.2rem;
+}
+
+.calendario__tarjetas--info p {
+    margin: .3125rem 0 0;
+    font-size: 0.8rem;
+}
+
+
+/*== CALENDARIO ==*/
+
+.calendarioGeneral__tarjetas{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3.125rem;
+    max-width: 75rem;
+    margin: 0 auto;
+    justify-items: center;
+    margin-top: 1.25rem;
+    font-family: "Orbitron", sans-serif;
+}
+
+.calendario__tarjeta{
+    width: 31.25rem;
+    border-radius: .75rem;
+    background: #0a0a0a;
+    padding: 1.25rem;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.calendario__tarjeta--actual{
+    width: 31.25rem;
+    border-radius: .75rem;
+    background: #a81212;
+    padding: 1.25rem;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.calendario__tarjeta:hover{
+    transform: scale(1.01);
+}
+
+.calendario__tarjeta--actual:hover{
+    transform: scale(1.01);
+}
+
+.calendario__tarjeta--header{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 1rem;
+}
+
+.calendario__pais{
+    margin: 0;
+    font-size: .875rem;
+    color: #bbb;
+    font-weight: 600;
+}
+
+.calendario__pais{
+    display: flex;
+    align-items: center;
+    gap: .625rem;
+    margin: .25rem 0;
+}
+
+.calendario__pais img{
+    width: 1.25rem;
+    border-radius: .125rem;
+}
+
+.calendario__pais h5{
+    margin: 0;
+    font-size: 1.25rem;
+    font-weight: 700;
+}
+
+.calendario__fecha{
+    background: #1e2533;
+    padding: .375rem .75rem;
+    border-radius: .375rem;
+    font-size: .875rem;
+    white-space: nowrap;
+}
+
+.calendario__circuito{
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+.calendario__circuito img{
+    width: 80%;
+    max-width: 21.875rem;
+    height: auto;
+}
+
+.calendarioGeneral{
+    margin-bottom: .9375rem;
+}
+
+/*== PÁGINA FORMULARIO ==*/
+    .formulario{
+    background-image: url(https://soymotor.com/sites/default/files/imagenes/article/alex-alonso1.jpg);
+    width: 100%;
+    height: auto;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.navbar{
+    background-color: #090809;
+}
+
+.nav-link{
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+    margin: 0 .4375rem;
+    font-family: "Rajdhani", sans-serif;
+    font-size: 1.375rem;
+    font-weight: 500;
+}
+
+.navbar-nav {
+    margin: auto;
+}
+
+.nav-link:hover {
+    color: red;
+}
+
+.formulario__textoFormulario h1{
+    font-weight: 600;
+    font-family: "Goldman", sans-serif;
+    font-size: 3rem;
+}
+
+.formulario__textoFormulario p{
+    font-family: "Goldman", sans-serif;
+    font-size: 1.1rem;
+}
+
+
+label{
+    display: block;
+    margin: .625rem .3125rem;
+    font-weight: 600;
+}
+
+option{
+    font-weight: 500;
+}
+
+.formulario{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;     
+    min-height: 100vh;
+    text-align: center;
+    position: relative;
+}
+
+.formulario__contenedor {
+    background: #00000099;
+    padding: 1.25rem;
+    border-radius: .75rem;
+    width: 100%;
+    max-width: 21.875rem;
+    margin: 0 auto;
+    box-sizing: border-box;
+    text-align: left;
+    margin-bottom: 1rem;
+}
+
+
+.formulario__contenedor .btn {
+    width: 100%;
+    font-weight: bold;
+}
+
+.btn{
+    margin-top: 1rem;
+}
+
+.formulario__contenedor input,
+.formulario__contenedor select {
+    width: 100%;
+    margin-bottom: .75rem;
+    padding: .5rem;
+    border: none;
+    border-radius: .375rem;
+}
+
+/* MEDIA QUERY PAGINA INDEX */
+
+/* 1024 */
+@media (max-width: 1024px){
+    .banner__video{
+        width: 64rem;
+        object-fit: cover;
+    }
+
+    .banner__texto{
+        text-align: center;
+    }
+
+    .footer__logo img{
+        height: 7rem;
+    }
+}
+
+/* 768 */
+@media (max-width: 768px){
+    .banner__video{
+        width: 48rem;
+        object-fit: cover;
+    }
+
+    .banner__texto{
+        font-size: 1.9rem;
+        text-align: center;
+    }
+
+    .noticias__container h4{
+        font-size: 1.1rem;
+    }
+}
+
+/* 425 */
+@media (max-width: 425px){
+    .banner__video{
+        width: 26.5625rem;
+        object-fit: cover;
+    }
+
+    .header__navbarLogo--index{
+        display: none;
+    }
+    
+    .header__menuNav--index{
+        flex-wrap: wrap;
+        gap: 1.4375rem;
+    }
+
+    .header__menuNav--index li a{
+        font-size: 1.5rem;
+    }
+
+    .noticias__grid-container{
+        display: block;
+    }
+
+    .banner__texto{
+        font-size: 1.6rem;
+    }
+
+    .noticias__container article{
+        margin-bottom: .9375rem;
+    }
+
+    .noticias__imagenPrincipal{
+        height: 13rem;
+    } 
+
+    .footer__container{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas:
+        "logo redes"
+        "logo contacto";
+        gap: .625rem;
+    }
+
+    .footer__logo{
+        grid-area: logo;
+        display: flex;
+        align-items: center;
+    }
+    .footer__redes {
+        grid-area: redes;
+    }
+    .footer__contacto {
+        grid-area: contacto;
+    }
+
+    .footer__logo img{
+        height: 9rem;
+    }
+}
+
+/* 320 */
+@media (max-width: 320px){
+    .banner__video{
+        width: 20rem;
+        object-fit: cover;
+    }
+
+    .header__menuNav--index li a{
+        font-size: 1.3rem;
+    }
+
+    .banner__texto{
+        font-size: 1.3rem;
+    }   
+
+    .footer__logo img{
+        height: 8rem;
+    }
+}

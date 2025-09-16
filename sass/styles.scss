@@ -1,0 +1,16 @@
+// UTILITES
+@import './utilities/variables';
+@import './utilities/mixins';
+// BASE
+@import './base/reset';
+@import './base/fonts';
+
+// LAYOUT
+@import './layout/body.scss';
+@import './layout/section-noticias';
+@import './layout/footer';
+// COMPONENTS
+@import './components/header-general.scss';
+@import './components/header-index';
+@import './components/banner';
+// MEDIA-QUERY
