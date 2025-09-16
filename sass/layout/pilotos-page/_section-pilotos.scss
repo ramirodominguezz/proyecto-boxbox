@@ -1,0 +1,146 @@
+.pilotos{
+    margin: .9375rem;
+
+    h1{
+        font-size: 1.8rem;
+    }
+        p{
+        font-size: 1.2rem;
+    }
+}
+
+.tarjetas__tarjeta--mclaren{
+    width: 31.25rem;
+    height: 12.5rem;
+    border-radius: .75rem;
+    background: linear-gradient(90deg, #d35400 0%, #e67e22 100%);
+    position: relative;
+    overflow: hidden;
+    padding: 1.25rem;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s ease;
+
+    &:hover{
+        transform: scale(1.01);
+    }
+}
+
+.tarjetas__tarjeta--ferrari{
+    @extend .tarjetas__tarjeta--mclaren;
+    background: linear-gradient(90deg, #710006 0%, #ED1131 100%);
+
+    &:hover{
+        transform: scale(1.01);
+    }
+}
+
+.tarjetas__tarjeta--mercedes{
+    @extend .tarjetas__tarjeta--mclaren;
+    background: linear-gradient(90deg, #007560 0%, #00D7B6 100%);
+
+    &:hover{
+        transform: scale(1.01);
+    }
+}
+
+.tarjetas__tarjeta--redbull{
+    @extend .tarjetas__tarjeta--mclaren;
+    background: linear-gradient(90deg, #003282 0%, #4781D7 100%);
+
+    &:hover{
+        transform: scale(1.01);
+    }
+}
+
+.tarjetas__tarjeta--williams{
+    @extend .tarjetas__tarjeta--mclaren;
+    background: linear-gradient(90deg, #000681 0%, #1868DB 100%);
+
+    &:hover{
+        transform: scale(1.01);
+    }
+}
+
+.tarjetas__tarjeta--astonmartin{
+    @extend .tarjetas__tarjeta--mclaren;
+    background: linear-gradient(90deg, #00482C 0%, #229971 100%);
+
+    &:hover{
+        transform: scale(1.01);
+    }
+}
+
+.tarjetas__tarjeta--kick{
+    @extend .tarjetas__tarjeta--mclaren;
+    background: linear-gradient(90deg, #006300 0%, #01C00E 100%);
+
+    &:hover{
+        transform: scale(1.01);
+    }
+}
+
+.tarjetas__tarjeta--vcarb{
+    @extend .tarjetas__tarjeta--mclaren;
+    background: linear-gradient(90deg, #2345AB 0%, #6C98FF 100%);
+
+    &:hover{
+        transform: scale(1.01);
+    }
+}
+
+.tarjetas__tarjeta--haas{
+    @extend .tarjetas__tarjeta--mclaren;
+    background: linear-gradient(90deg, #4D5052 0%, #9C9FA2 100%);
+
+    &:hover{
+        transform: scale(1.01);
+    }
+}
+
+.tarjetas__tarjeta--alpine{
+    @extend .tarjetas__tarjeta--mclaren;
+    background: linear-gradient(90deg, #005081 0%, #00A1E8 100%);
+
+    &:hover{
+        transform: scale(1.01);
+    }
+}
+
+
+.tarjetas__tarjeta--info{
+    position: relative;
+    z-index: 1;
+}
+
+.tarjetas__equipo{
+    font-size: 1.125rem;
+    color: #ddd;
+    margin-bottom: 1.25rem;
+}
+
+.tarjetas__numero{
+    font-size: 2.3rem;
+    font-weight: bold;
+}
+
+.tarjetas__piloto{
+    position: absolute;
+    bottom: 0;
+    right: 1.25rem;
+    width: 45%;
+    z-index: 2;
+}
+
+.tarjetas__bandera{
+    position: absolute;
+    bottom: .625rem;
+    left: 1.25rem;
+    width: 1.75rem;
+    height: 1.25rem;
+    border-radius: .3125rem;
+    z-index: 3;
+}
+
+
+

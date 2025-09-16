@@ -11,16 +11,27 @@
         .footer__logo img{
             height: 8rem;
         }
-            .footer h5{
+            .footer__container h5{
                 font-size: 1.25rem;
                 margin-bottom: .3125rem;
                 font-weight: 500;
             }
-                .footer__redes ul li a,
-                .footer__contacto ul li a {
-                    color: #aaa;
-                    text-decoration: none;
+                .footer__redes ul{
+                    li{
+                        a{
+                            color: #aaa;
+                            text-decoration: none;
+                        }
+                    }
                 }
+                .footer__contacto ul{ 
+                    li{
+                        a{
+                            color: #aaa;
+                            text-decoration: none;
+                        }
+                        }    
+                    }
                     .footer__redes ul li a:hover{
                         color: red;
                     }

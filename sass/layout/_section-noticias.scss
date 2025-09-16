@@ -2,7 +2,7 @@
     .noticias__container{
         padding: .9375rem;
     }
-        .noticias__container h3{
+        h3{
             font-size: 1.5rem;
             font-weight: 600;
             display: inline-block;
@@ -11,7 +11,7 @@
             margin-bottom: .9375rem;
             margin-top: 1.25rem;
         }
-            .noticias__container article{
+            article{
                 position: relative;
                 border-radius: .5rem;
                 overflow: hidden;
@@ -35,7 +35,7 @@
                         display: block;
                         border-radius: .5rem;
                     }
-                        .noticias__container h4{
+                        h4{
                             position: absolute;
                             bottom: 0;
                             left: 0;

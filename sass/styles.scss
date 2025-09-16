@@ -1,6 +1,7 @@
 // UTILITES
 @import './utilities/variables';
 @import './utilities/mixins';
+
 // BASE
 @import './base/reset';
 @import './base/fonts';
@@ -9,8 +10,13 @@
 @import './layout/body.scss';
 @import './layout/section-noticias';
 @import './layout/footer';
+@import './layout/pilotos-page/section-pilotos';
+@import './layout/equipos-page/section-equipos';
+
 // COMPONENTS
 @import './components/header-general.scss';
 @import './components/header-index';
 @import './components/banner';
+@import './components/tarjetas';
+
 // MEDIA-QUERY

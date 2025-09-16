@@ -1,0 +1,50 @@
+.equipos{
+    margin: .9375rem;
+
+    .equipos__textoInicio h1{
+        font-size: 1.8rem;
+    }
+        p{
+            font-size: 1.2rem;
+        }
+}
+
+.textoEquipos h1{
+    font-size: 1.5rem;
+}
+
+.tarjetas__tarjeta--header{
+    display: flex;
+    justify-content: space-between;
+}
+
+.tarjetas__pilotos--equipos{
+    display: flex;
+    gap: 1.25rem;
+    margin: .625rem 0 1.25rem 0;
+
+    .tarjetas__pilotos--piloto img{
+        width: 1.5rem;
+        border-radius: 25%;
+    }
+}
+
+.tarjetas__pilotos--piloto{
+    display: flex;
+    align-items: center;
+    margin-top: -0.625rem;
+    gap: .5rem;
+        p{
+            
+            font-size: 0.9rem;
+            
+        }
+        span{
+            font-weight: bolder;
+            text-transform: uppercase;
+        }
+}
+
+.tarjetas__auto img{
+    width: 95%;
+}

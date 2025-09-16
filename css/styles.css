@@ -16,7 +16,7 @@ body {
 .noticias .noticias__container {
   padding: 0.9375rem;
 }
-.noticias .noticias__container h3 {
+.noticias h3 {
   font-size: 1.5rem;
   font-weight: 600;
   display: inline-block;
@@ -25,13 +25,13 @@ body {
   margin-bottom: 0.9375rem;
   margin-top: 1.25rem;
 }
-.noticias .noticias__container article {
+.noticias article {
   position: relative;
   border-radius: 0.5rem;
   overflow: hidden;
   transition: 0.2s ease;
 }
-.noticias .noticias__container article:hover {
+.noticias article:hover {
   transform: scale(1.01);
   cursor: pointer;
 }
@@ -49,7 +49,7 @@ body {
   display: block;
   border-radius: 0.5rem;
 }
-.noticias .noticias__container h4 {
+.noticias h4 {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -100,12 +100,15 @@ body {
 .footer .footer__logo img {
   height: 8rem;
 }
-.footer .footer h5 {
+.footer .footer__container h5 {
   font-size: 1.25rem;
   margin-bottom: 0.3125rem;
   font-weight: 500;
 }
-.footer .footer__redes ul li a,
+.footer .footer__redes ul li a {
+  color: #aaa;
+  text-decoration: none;
+}
 .footer .footer__contacto ul li a {
   color: #aaa;
   text-decoration: none;
@@ -125,6 +128,176 @@ body {
 .footer .footer__abajo p {
   font-size: 0.875rem;
   color: #aaa;
+}
+
+.pilotos {
+  margin: 0.9375rem;
+}
+.pilotos h1 {
+  font-size: 1.8rem;
+}
+.pilotos p {
+  font-size: 1.2rem;
+}
+
+.tarjetas__tarjeta--mclaren, .tarjetas__tarjeta--alpine, .tarjetas__tarjeta--haas, .tarjetas__tarjeta--vcarb, .tarjetas__tarjeta--kick, .tarjetas__tarjeta--astonmartin, .tarjetas__tarjeta--williams, .tarjetas__tarjeta--redbull, .tarjetas__tarjeta--mercedes, .tarjetas__tarjeta--ferrari {
+  width: 31.25rem;
+  height: 12.5rem;
+  border-radius: 0.75rem;
+  background: linear-gradient(90deg, #d35400 0%, #e67e22 100%);
+  position: relative;
+  overflow: hidden;
+  padding: 1.25rem;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+.tarjetas__tarjeta--mclaren:hover, .tarjetas__tarjeta--alpine:hover, .tarjetas__tarjeta--haas:hover, .tarjetas__tarjeta--vcarb:hover, .tarjetas__tarjeta--kick:hover, .tarjetas__tarjeta--astonmartin:hover, .tarjetas__tarjeta--williams:hover, .tarjetas__tarjeta--redbull:hover, .tarjetas__tarjeta--mercedes:hover, .tarjetas__tarjeta--ferrari:hover {
+  transform: scale(1.01);
+}
+
+.tarjetas__tarjeta--ferrari {
+  background: linear-gradient(90deg, #710006 0%, #ED1131 100%);
+}
+.tarjetas__tarjeta--ferrari:hover {
+  transform: scale(1.01);
+}
+
+.tarjetas__tarjeta--mercedes {
+  background: linear-gradient(90deg, #007560 0%, #00D7B6 100%);
+}
+.tarjetas__tarjeta--mercedes:hover {
+  transform: scale(1.01);
+}
+
+.tarjetas__tarjeta--redbull {
+  background: linear-gradient(90deg, #003282 0%, #4781D7 100%);
+}
+.tarjetas__tarjeta--redbull:hover {
+  transform: scale(1.01);
+}
+
+.tarjetas__tarjeta--williams {
+  background: linear-gradient(90deg, #000681 0%, #1868DB 100%);
+}
+.tarjetas__tarjeta--williams:hover {
+  transform: scale(1.01);
+}
+
+.tarjetas__tarjeta--astonmartin {
+  background: linear-gradient(90deg, #00482C 0%, #229971 100%);
+}
+.tarjetas__tarjeta--astonmartin:hover {
+  transform: scale(1.01);
+}
+
+.tarjetas__tarjeta--kick {
+  background: linear-gradient(90deg, #006300 0%, #01C00E 100%);
+}
+.tarjetas__tarjeta--kick:hover {
+  transform: scale(1.01);
+}
+
+.tarjetas__tarjeta--vcarb {
+  background: linear-gradient(90deg, #2345AB 0%, #6C98FF 100%);
+}
+.tarjetas__tarjeta--vcarb:hover {
+  transform: scale(1.01);
+}
+
+.tarjetas__tarjeta--haas {
+  background: linear-gradient(90deg, #4D5052 0%, #9C9FA2 100%);
+}
+.tarjetas__tarjeta--haas:hover {
+  transform: scale(1.01);
+}
+
+.tarjetas__tarjeta--alpine {
+  background: linear-gradient(90deg, #005081 0%, #00A1E8 100%);
+}
+.tarjetas__tarjeta--alpine:hover {
+  transform: scale(1.01);
+}
+
+.tarjetas__tarjeta--info {
+  position: relative;
+  z-index: 1;
+}
+
+.tarjetas__equipo {
+  font-size: 1.125rem;
+  color: #ddd;
+  margin-bottom: 1.25rem;
+}
+
+.tarjetas__numero {
+  font-size: 2.3rem;
+  font-weight: bold;
+}
+
+.tarjetas__piloto {
+  position: absolute;
+  bottom: 0;
+  right: 1.25rem;
+  width: 45%;
+  z-index: 2;
+}
+
+.tarjetas__bandera {
+  position: absolute;
+  bottom: 0.625rem;
+  left: 1.25rem;
+  width: 1.75rem;
+  height: 1.25rem;
+  border-radius: 0.3125rem;
+  z-index: 3;
+}
+
+.equipos {
+  margin: 0.9375rem;
+}
+.equipos .equipos__textoInicio h1 {
+  font-size: 1.8rem;
+}
+.equipos p {
+  font-size: 1.2rem;
+}
+
+.textoEquipos h1 {
+  font-size: 1.5rem;
+}
+
+.tarjetas__tarjeta--header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.tarjetas__pilotos--equipos {
+  display: flex;
+  gap: 1.25rem;
+  margin: 0.625rem 0 1.25rem 0;
+}
+.tarjetas__pilotos--equipos .tarjetas__pilotos--piloto img {
+  width: 1.5rem;
+  border-radius: 25%;
+}
+
+.tarjetas__pilotos--piloto {
+  display: flex;
+  align-items: center;
+  margin-top: -0.625rem;
+  gap: 0.5rem;
+}
+.tarjetas__pilotos--piloto p {
+  font-size: 0.9rem;
+}
+.tarjetas__pilotos--piloto span {
+  font-weight: bolder;
+  text-transform: uppercase;
+}
+
+.tarjetas__auto img {
+  width: 95%;
 }
 
 .header .header__navBar {
@@ -233,6 +406,17 @@ body {
   font-family: "Goldman", sans-serif;
   font-weight: bold;
   color: white;
+}
+
+.tarjetas {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 3.125rem;
+  max-width: 75rem;
+  margin: 0 auto;
+  justify-items: center;
+  margin-top: 1.25rem;
+  font-family: "Orbitron", sans-serif;
 }
 
 /*# sourceMappingURL=styles.css.map */
