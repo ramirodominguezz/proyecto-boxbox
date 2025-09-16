@@ -1,0 +1,37 @@
+.clasificacion__table{
+    width: 90%;
+    margin: 1.25rem auto;
+    border-collapse: collapse;
+}
+
+.clasificacion__icons{
+    width: 1.7rem;
+    border-radius: 90%;
+    object-fit: contain;
+    margin-right: .625rem;
+    vertical-align: middle;
+}
+
+th, td{
+    padding: .4375rem .9375rem;
+    text-align: left;
+}
+
+th{
+    color: #888;
+    font-size: .9rem;
+    border-bottom: .0625rem solid #888;
+    padding: .625rem; 
+}
+
+tbody tr:hover{
+    background-color: #292929;
+    cursor: pointer;
+}
+
+td{
+    font-weight: bold;
+    font-size: 1rem;
+    border-bottom: .0313rem solid #88888880;
+    padding: .9375rem .9375rem;
+}
