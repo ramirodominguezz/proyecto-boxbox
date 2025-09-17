@@ -1,0 +1,73 @@
+.calendario__tarjeta{
+    width: 31.25rem;
+    border-radius: .75rem;
+    background: #0a0a0a;
+    padding: 1.25rem;
+    cursor: pointer;
+    transition: 0.2s ease;
+
+    &:hover{
+        transform: scale(1.01);
+    }
+}
+
+.calendarioGeneral__tarjetas{
+    @include grid (repeat(2, 1fr), none, center, none, 3.125rem);
+    max-width: 75rem;
+    margin: 0 auto;
+    margin-top: 1.25rem;
+    font-family: "Orbitron", sans-serif; 
+}
+
+.calendario__tarjeta--header{
+    @include flex (none, none, space-between, flex-start, none);
+    margin-bottom: 1rem;
+}
+
+.calendario__pais{
+    margin: 0;
+    font-size: .875rem;
+    color: #bbb;
+    font-weight: 600;
+
+    img{
+        width: 1.25rem;
+        border-radius: .125rem;
+    }
+        h5{
+            margin: 0;
+            font-size: 1.25rem;
+            font-weight: 700;
+        }
+}
+
+.calendario__fecha{
+    background: #1e2533;
+    padding: .375rem .75rem;
+    border-radius: .375rem;
+    font-size: .875rem;
+    white-space: nowrap;
+}
+
+.calendario__circuito{
+    @include flex(none, none, center, none, none);
+    margin-top: 1rem;
+        img{
+            width: 80%;
+            max-width: 21.875rem;
+            height: auto;
+        }
+}
+
+.calendario__tarjeta--actual{
+    width: 31.25rem;
+    border-radius: .75rem;
+    background: #a81212;
+    padding: 1.25rem;
+    cursor: pointer;
+    transition: 0.2s ease;
+
+    &:hover{
+        transform: scale(1.01);
+    }
+}

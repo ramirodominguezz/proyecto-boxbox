@@ -1,99 +1,6 @@
 /*== PÁGINA CALENDARIO ==*/
 
-.calendario{
-    display: flex;
-    gap: 1.25rem;
-    justify-content: center;
-    padding: 1.25rem;
-    background-color: #000;
-    flex-wrap: wrap;
-}
-
-.calendario__textoCalendario{
-    width: 100%;
-    margin-bottom: 1rem;
-    font-family: "Orbitron", sans-serif;
-}
-
-.calendario__textoCalendario h1{
-    font-size: 2rem;
-}
-
-.calendario__tarjetas{
-    position: relative;
-    width: 15rem;
-    height: 17rem;
-    border-radius: .9375rem;
-    overflow: hidden;
-    margin-bottom: 1.875rem;
-    cursor: pointer;
-}
-
-.calendario__tarjetas--grande{
-    width: 45rem;
-    height: 17rem;
-}
-
-.calendario__contenedor--tarjetas h2{
-    margin: .625rem 0;
-    font-size: 1.5rem;
-}
-
-.calendario__imagen{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    filter: brightness(70%);
-    transition: 0.2s ease;
-}
-
-.calendario__imagen:hover{
-    transform: scale(1.05);
-    filter: brightness(90%);
-}
-
-.calendario__tarjetas--info {
-    position: absolute;
-    top: 0;
-    left: 0; 
-    width: 100%;
-    padding: .9375rem;
-    font-family: "Orbitron", sans-serif;
-}
-
-.calendario__tarjetas--info h3 {
-    margin: 0;
-    font-size: 1.2rem;
-}
-
-.calendario__tarjetas--info p {
-    margin: .3125rem 0 0;
-    font-size: 0.8rem;
-}
-
-
 /*== CALENDARIO ==*/
-
-.calendarioGeneral__tarjetas{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 3.125rem;
-    max-width: 75rem;
-    margin: 0 auto;
-    justify-items: center;
-    margin-top: 1.25rem;
-    font-family: "Orbitron", sans-serif;
-}
-
-.calendario__tarjeta{
-    width: 31.25rem;
-    border-radius: .75rem;
-    background: #0a0a0a;
-    padding: 1.25rem;
-    cursor: pointer;
-    transition: 0.2s ease;
-}
-
 .calendario__tarjeta--actual{
     width: 31.25rem;
     border-radius: .75rem;
@@ -103,69 +10,12 @@
     transition: 0.2s ease;
 }
 
-.calendario__tarjeta:hover{
-    transform: scale(1.01);
-}
-
 .calendario__tarjeta--actual:hover{
     transform: scale(1.01);
 }
 
-.calendario__tarjeta--header{
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    margin-bottom: 1rem;
-}
 
-.calendario__pais{
-    margin: 0;
-    font-size: .875rem;
-    color: #bbb;
-    font-weight: 600;
-}
 
-.calendario__pais{
-    display: flex;
-    align-items: center;
-    gap: .625rem;
-    margin: .25rem 0;
-}
-
-.calendario__pais img{
-    width: 1.25rem;
-    border-radius: .125rem;
-}
-
-.calendario__pais h5{
-    margin: 0;
-    font-size: 1.25rem;
-    font-weight: 700;
-}
-
-.calendario__fecha{
-    background: #1e2533;
-    padding: .375rem .75rem;
-    border-radius: .375rem;
-    font-size: .875rem;
-    white-space: nowrap;
-}
-
-.calendario__circuito{
-    display: flex;
-    justify-content: center;
-    margin-top: 1rem;
-}
-
-.calendario__circuito img{
-    width: 80%;
-    max-width: 21.875rem;
-    height: auto;
-}
-
-.calendarioGeneral{
-    margin-bottom: .9375rem;
-}
 
 /*== PÁGINA FORMULARIO ==*/
     .formulario{

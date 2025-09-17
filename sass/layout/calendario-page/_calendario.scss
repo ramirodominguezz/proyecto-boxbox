@@ -1,0 +1,21 @@
+.calendario{
+    display: flex;
+    gap: 1.25rem;
+    justify-content: center;
+    padding: 1.25rem;
+    background-color: #000;
+    flex-wrap: wrap;
+
+    .calendario__textoCalendario{
+        width: 100%;
+        margin-bottom: 1rem;
+        font-family: "Orbitron", sans-serif;
+    }
+        .calendario__textoCalendario h1{
+            font-size: 2rem;
+        }
+}
+
+.calendarioGeneral{
+    margin-bottom: .9375rem;
+}

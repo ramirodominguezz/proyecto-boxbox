@@ -12,6 +12,7 @@
 @import './layout/footer';
 @import './layout/pilotos-page/section-pilotos';
 @import './layout/equipos-page/section-equipos';
+@import './layout/calendario-page/calendario';
 
 // COMPONENTS
 @import './components/header-general.scss';
@@ -19,5 +20,7 @@
 @import './components/banner';
 @import './components/tarjetas';
 @import './components/tabla';
+@import './components/tarjetasinicio-calendario';
+@import './components/tarjetas-calendario';
 
 // MEDIA-QUERY
