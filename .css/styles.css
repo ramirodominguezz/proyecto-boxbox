@@ -1,0 +1,870 @@
+@import url("https://fonts.googleapis.com/css2?family=Goldman:wght@400;700&family=Orbitron:wght@400..900&family=Rajdhani:wght@300;400;500;600;700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: content-box;
+}
+
+body {
+  background-color: #111111;
+  font-family: "Rajdhani", sans-serif;
+  color: white;
+}
+
+.noticias .noticias__container {
+  padding: 0.9375rem;
+}
+.noticias h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  display: inline-block;
+  border-bottom: 0.3125rem solid red;
+  padding-bottom: 0.125rem;
+  margin-bottom: 0.9375rem;
+  margin-top: 1.25rem;
+}
+.noticias article {
+  position: relative;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  transition: 0.2s ease;
+}
+.noticias article:hover {
+  transform: scale(1.01);
+  cursor: pointer;
+}
+.noticias .noticias__noticiasimg {
+  width: 100%;
+  height: 13rem;
+  object-fit: cover;
+  display: block;
+  border-radius: 0.5rem;
+}
+.noticias .noticias__imagenPrincipal {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  border-radius: 0.5rem;
+}
+.noticias h4 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 0.625rem;
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #fff;
+  background: linear-gradient(to top, rgb(0, 0, 0), rgba(0, 0, 0, 0));
+  margin: 0;
+  border-radius: 0 0 0.5rem 0.5rem;
+}
+.noticias .noticias__grid-container {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  grid-template-rows: repeat(2, 12.5rem);
+  justify-content: none;
+  align-content: none;
+  gap: 0.9375rem;
+  grid-template-areas: "principal      noticia1    noticia2" "principal      noticia3    noticia4";
+}
+.noticias .grid_item1 {
+  grid-area: principal;
+}
+.noticias .grid_item2 {
+  grid-area: noticia1;
+}
+.noticias .grid_item3 {
+  grid-area: noticia2;
+}
+.noticias .grid_item4 {
+  grid-area: noticia3;
+}
+.noticias .grid_item5 {
+  grid-area: noticia4;
+}
+
+.footer {
+  background-color: #090808;
+  padding: 2.5rem 1.25rem;
+}
+.footer .footer__container {
+  display: flex;
+  flex-wrap: none;
+  flex-direction: none;
+  justify-content: space-between;
+  align-items: none;
+  gap: none;
+  max-width: 75rem;
+  margin: auto;
+}
+.footer .footer__logo img {
+  height: 8rem;
+}
+.footer .footer__container h5 {
+  font-size: 1.25rem;
+  margin-bottom: 0.3125rem;
+  font-weight: 500;
+}
+.footer .footer__redes ul li a {
+  color: #aaa;
+  text-decoration: none;
+}
+.footer .footer__contacto ul li a {
+  color: #aaa;
+  text-decoration: none;
+}
+.footer .footer__redes ul li a:hover {
+  color: red;
+}
+.footer .footer__contacto ul li a:hover {
+  color: red;
+}
+.footer .footer__abajo {
+  border-top: 0.0625rem solid #333;
+  margin-top: 1.875rem;
+  padding-top: 0.9375rem;
+  text-align: center;
+}
+.footer .footer__abajo p {
+  font-size: 0.875rem;
+  color: #aaa;
+}
+
+.pilotos {
+  margin: 0.9375rem;
+}
+.pilotos .pilotos__textoInicio h1 {
+  font-size: 1.8rem;
+}
+.pilotos .pilotos__textoInicio p {
+  font-size: 1.2rem;
+}
+
+.tarjetas__tarjeta--mclaren, .tarjetas__tarjeta--alpine, .tarjetas__tarjeta--haas, .tarjetas__tarjeta--vcarb, .tarjetas__tarjeta--kick, .tarjetas__tarjeta--astonmartin, .tarjetas__tarjeta--williams, .tarjetas__tarjeta--redbull, .tarjetas__tarjeta--mercedes, .tarjetas__tarjeta--ferrari {
+  width: 31.25rem;
+  height: 12.5rem;
+  border-radius: 0.75rem;
+  background: linear-gradient(90deg, #d35400 0%, #e67e22 100%);
+  position: relative;
+  overflow: hidden;
+  padding: 1.25rem;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+.tarjetas__tarjeta--mclaren:hover, .tarjetas__tarjeta--alpine:hover, .tarjetas__tarjeta--haas:hover, .tarjetas__tarjeta--vcarb:hover, .tarjetas__tarjeta--kick:hover, .tarjetas__tarjeta--astonmartin:hover, .tarjetas__tarjeta--williams:hover, .tarjetas__tarjeta--redbull:hover, .tarjetas__tarjeta--mercedes:hover, .tarjetas__tarjeta--ferrari:hover {
+  transform: scale(1.01);
+}
+
+.tarjetas__tarjeta--ferrari {
+  background: linear-gradient(90deg, #710006 0%, #ED1131 100%);
+}
+.tarjetas__tarjeta--ferrari:hover {
+  transform: scale(1.01);
+}
+
+.tarjetas__tarjeta--mercedes {
+  background: linear-gradient(90deg, #007560 0%, #00D7B6 100%);
+}
+.tarjetas__tarjeta--mercedes:hover {
+  transform: scale(1.01);
+}
+
+.tarjetas__tarjeta--redbull {
+  background: linear-gradient(90deg, #003282 0%, #4781D7 100%);
+}
+.tarjetas__tarjeta--redbull:hover {
+  transform: scale(1.01);
+}
+
+.tarjetas__tarjeta--williams {
+  background: linear-gradient(90deg, #000681 0%, #1868DB 100%);
+}
+.tarjetas__tarjeta--williams:hover {
+  transform: scale(1.01);
+}
+
+.tarjetas__tarjeta--astonmartin {
+  background: linear-gradient(90deg, #00482C 0%, #229971 100%);
+}
+.tarjetas__tarjeta--astonmartin:hover {
+  transform: scale(1.01);
+}
+
+.tarjetas__tarjeta--kick {
+  background: linear-gradient(90deg, #006300 0%, #01C00E 100%);
+}
+.tarjetas__tarjeta--kick:hover {
+  transform: scale(1.01);
+}
+
+.tarjetas__tarjeta--vcarb {
+  background: linear-gradient(90deg, #2345AB 0%, #6C98FF 100%);
+}
+.tarjetas__tarjeta--vcarb:hover {
+  transform: scale(1.01);
+}
+
+.tarjetas__tarjeta--haas {
+  background: linear-gradient(90deg, #4D5052 0%, #9C9FA2 100%);
+}
+.tarjetas__tarjeta--haas:hover {
+  transform: scale(1.01);
+}
+
+.tarjetas__tarjeta--alpine {
+  background: linear-gradient(90deg, #005081 0%, #00A1E8 100%);
+}
+.tarjetas__tarjeta--alpine:hover {
+  transform: scale(1.01);
+}
+
+.tarjetas__tarjeta--info {
+  position: relative;
+  z-index: 1;
+}
+
+.tarjetas__equipo {
+  font-size: 1.125rem;
+  color: #ddd;
+  margin-bottom: 1.25rem;
+}
+
+.tarjetas__numero {
+  font-size: 2.3rem;
+  font-weight: bold;
+}
+
+.tarjetas__piloto {
+  position: absolute;
+  bottom: 0;
+  right: 1.25rem;
+  width: 45%;
+  z-index: 2;
+}
+
+.tarjetas__bandera {
+  position: absolute;
+  bottom: 0.625rem;
+  left: 1.25rem;
+  width: 1.75rem;
+  height: 1.25rem;
+  border-radius: 0.3125rem;
+  z-index: 3;
+}
+
+.equipos {
+  margin: 0.9375rem;
+}
+.equipos .equipos__textoInicio h1 {
+  font-size: 1.8rem;
+}
+.equipos p {
+  font-size: 1.2rem;
+}
+
+.textoEquipos h1 {
+  font-size: 1.5rem;
+}
+
+.tarjetas__tarjeta--header {
+  display: flex;
+  flex-wrap: none;
+  flex-direction: none;
+  justify-content: space-between;
+  align-items: none;
+  gap: none;
+}
+
+.tarjetas__pilotos--equipos {
+  display: flex;
+  gap: 1.25rem;
+  margin: 0.625rem 0 1.25rem 0;
+}
+.tarjetas__pilotos--equipos .tarjetas__pilotos--piloto img {
+  width: 1.5rem;
+  border-radius: 25%;
+}
+
+.tarjetas__pilotos--piloto {
+  display: flex;
+  flex-wrap: none;
+  flex-direction: none;
+  justify-content: none;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: -0.625rem;
+}
+.tarjetas__pilotos--piloto p {
+  font-size: 0.9rem;
+}
+.tarjetas__pilotos--piloto span {
+  font-weight: bolder;
+  text-transform: uppercase;
+}
+
+.tarjetas__auto img {
+  width: 95%;
+}
+
+.calendario {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: none;
+  justify-content: center;
+  align-items: none;
+  gap: 1.25rem;
+  gap: 1.25rem;
+  padding: 1.25rem;
+  background-color: #000;
+}
+.calendario .calendario__textoCalendario {
+  width: 100%;
+  margin-bottom: 1rem;
+  font-family: "Orbitron", sans-serif;
+}
+.calendario .calendario__textoCalendario h1 {
+  font-size: 2rem;
+}
+
+.calendarioGeneral {
+  margin-bottom: 0.9375rem;
+}
+
+.formulario {
+  background-image: url(https://soymotor.com/sites/default/files/imagenes/article/alex-alonso1.jpg);
+  width: 100%;
+  height: auto;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-wrap: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: none;
+  min-height: 100vh;
+  text-align: center;
+  position: relative;
+}
+
+.formulario__textoFormulario h1 {
+  font-weight: 600;
+  font-family: "Goldman", sans-serif;
+  font-size: 3rem;
+}
+.formulario__textoFormulario p {
+  font-family: "Goldman", sans-serif;
+  font-size: 1.1rem;
+}
+
+.navbar {
+  background-color: #090809;
+}
+
+.nav-link {
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration: none;
+  margin: 0 0.4375rem;
+  font-family: "Rajdhani", sans-serif;
+  font-size: 1.375rem;
+  font-weight: 500;
+}
+.nav-link:hover {
+  color: red;
+}
+
+.navbar-nav {
+  margin: auto;
+}
+
+label {
+  display: block;
+  margin: 0.625rem 0.3125rem;
+  font-weight: 600;
+}
+
+option {
+  font-weight: 500;
+}
+
+.formulario__contenedor {
+  background: rgba(0, 0, 0, 0.6);
+  padding: 1.25rem;
+  border-radius: 0.75rem;
+  width: 100%;
+  max-width: 21.875rem;
+  margin: 0 auto;
+  box-sizing: border-box;
+  text-align: left;
+  margin-bottom: 1rem;
+}
+
+.formulario__contenedor .btn {
+  width: 100%;
+  font-weight: bold;
+}
+
+.btn {
+  margin-top: 1rem;
+}
+
+.formulario__contenedor input,
+.formulario__contenedor select {
+  width: 100%;
+  margin-bottom: 0.75rem;
+  padding: 0.5rem;
+  border: none;
+  border-radius: 0.375rem;
+}
+
+.header .header__navBar {
+  display: flex;
+  flex-wrap: none;
+  flex-direction: none;
+  justify-content: space-between;
+  align-items: center;
+  gap: none;
+  background-color: #090809;
+  padding: 0.625rem 0.9375rem;
+}
+.header .header__navbarLogo {
+  height: 4.375rem;
+}
+.header .header__menuNav {
+  display: flex;
+  flex-wrap: none;
+  flex-direction: none;
+  justify-content: center;
+  align-items: none;
+  gap: none;
+  flex: 1;
+  gap: 1.875rem;
+}
+.header .header__menuNav a {
+  color: white;
+  font-size: 1.375rem;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+.header .header__menuNav a:hover {
+  color: red;
+}
+
+.header--index {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+  overflow: hidden;
+}
+.header--index .header__navBar--index {
+  display: flex;
+  flex-wrap: none;
+  flex-direction: none;
+  justify-content: space-between;
+  align-items: center;
+  gap: none;
+  background: transparent;
+  padding: 0.625rem 0.9375rem;
+}
+.header--index .header__navbarLogo--index {
+  height: 4.375rem;
+}
+.header--index .header__navBar--index {
+  display: flex;
+  flex-wrap: none;
+  flex-direction: none;
+  justify-content: space-between;
+  align-items: center;
+  gap: none;
+  background: transparent;
+  padding: 0.625rem 0.9375rem;
+}
+.header--index .header__menuNav--index {
+  display: flex;
+  flex-wrap: none;
+  flex-direction: none;
+  justify-content: center;
+  align-items: none;
+  gap: none;
+  flex: 1;
+  gap: 1.875rem;
+}
+.header--index .header__menuNav--index a {
+  color: white;
+  font-size: 1.375rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  display: inline-block;
+  transition: transform 0.2s ease, color 0.2s ease;
+}
+.header--index .header__menuNav--index a:hover {
+  transform: scale(1.1);
+  color: red;
+}
+
+.banner {
+  position: relative;
+  width: 100%;
+  height: 120vh;
+  overflow: hidden;
+}
+.banner .banner__video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+  filter: brightness(40%);
+}
+.banner .banner__texto {
+  display: flex;
+  flex-wrap: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: none;
+  position: relative;
+  z-index: 1;
+  height: 100%;
+  font-size: 2rem;
+}
+.banner .banner__texto h1 {
+  font-family: "Goldman", sans-serif;
+  font-weight: bold;
+  color: red;
+  text-shadow: 0 0 2.5rem red;
+}
+.banner .banner__texto h2 {
+  font-family: "Goldman", sans-serif;
+  font-weight: bold;
+  color: white;
+}
+
+.tarjetas {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: none;
+  justify-content: none;
+  align-content: none;
+  gap: 3.125rem;
+  max-width: 75rem;
+  margin: 0 auto;
+  justify-items: center;
+  margin-top: 1.25rem;
+  font-family: "Orbitron", sans-serif;
+}
+
+.clasificacion__table {
+  width: 90%;
+  margin: 1.25rem auto;
+  border-collapse: collapse;
+}
+
+.clasificacion__icons {
+  width: 1.7rem;
+  border-radius: 90%;
+  object-fit: contain;
+  margin-right: 0.625rem;
+  vertical-align: middle;
+}
+
+th, td {
+  padding: 0.4375rem 0.9375rem;
+  text-align: left;
+}
+
+th {
+  color: #888;
+  font-size: 0.9rem;
+  border-bottom: 0.0625rem solid #888;
+  padding: 0.625rem;
+}
+
+tbody tr:hover {
+  background-color: #292929;
+  cursor: pointer;
+}
+
+td {
+  font-weight: bold;
+  font-size: 1rem;
+  border-bottom: 0.0313rem solid rgba(136, 136, 136, 0.5019607843);
+  padding: 0.9375rem 0.9375rem;
+}
+
+.calendario__tarjetas {
+  position: relative;
+  width: 15rem;
+  height: 17rem;
+  border-radius: 0.9375rem;
+  overflow: hidden;
+  margin-bottom: 1.875rem;
+  cursor: pointer;
+}
+
+.calendario__tarjetas--grande {
+  width: 45rem;
+  height: 17rem;
+}
+
+.calendario__contenedor--tarjetas h2 {
+  margin: 0.625rem 0;
+  font-size: 1.5rem;
+}
+
+.calendario__imagen {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(70%);
+  transition: 0.2s ease;
+}
+.calendario__imagen:hover {
+  transform: scale(1.05);
+  filter: brightness(90%);
+}
+
+.calendario__tarjetas--info {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 0.9375rem;
+  font-family: "Orbitron", sans-serif;
+}
+.calendario__tarjetas--info h3 {
+  margin: 0;
+  font-size: 1.2rem;
+}
+.calendario__tarjetas--info p {
+  margin: 0.3125rem 0 0;
+  font-size: 0.8rem;
+}
+
+.calendario__tarjeta {
+  width: 31.25rem;
+  border-radius: 0.75rem;
+  background: #0a0a0a;
+  padding: 1.25rem;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+.calendario__tarjeta:hover {
+  transform: scale(1.01);
+}
+
+.calendarioGeneral__tarjetas {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: none;
+  justify-content: none;
+  align-content: none;
+  gap: 3.125rem;
+  justify-items: center;
+  max-width: 75rem;
+  margin: 0 auto;
+  margin-top: 1.25rem;
+  font-family: "Orbitron", sans-serif;
+}
+
+.calendario__tarjeta--header {
+  display: flex;
+  flex-wrap: none;
+  flex-direction: none;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: none;
+  margin-bottom: 1rem;
+}
+
+.calendario__pais {
+  display: flex;
+  flex-wrap: none;
+  flex-direction: none;
+  justify-content: none;
+  align-items: center;
+  gap: 0.625rem;
+  margin: 0.25rem 0;
+  font-size: 0.875rem;
+  color: #bbb;
+  font-weight: 600;
+}
+.calendario__pais img {
+  width: 1.25rem;
+  border-radius: 0.125rem;
+}
+.calendario__pais h5 {
+  margin: 0;
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+.calendario__fecha {
+  background: #1e2533;
+  padding: 0.375rem 0.75rem;
+  border-radius: 0.375rem;
+  font-size: 0.875rem;
+  white-space: nowrap;
+}
+
+.calendario__circuito {
+  display: flex;
+  flex-wrap: none;
+  flex-direction: none;
+  justify-content: center;
+  align-items: none;
+  gap: none;
+  margin-top: 1rem;
+}
+.calendario__circuito img {
+  width: 80%;
+  max-width: 21.875rem;
+  height: auto;
+}
+
+.calendario__tarjeta--actual {
+  width: 31.25rem;
+  border-radius: 0.75rem;
+  background: #a81212;
+  padding: 1.25rem;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+.calendario__tarjeta--actual:hover {
+  transform: scale(1.01);
+}
+
+.fade-in-top {
+  -webkit-animation: fade-in-top 0.6s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+  animation: fade-in-top 0.6s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+}
+
+@-webkit-keyframes fade-in-top {
+  0% {
+    -webkit-transform: translateY(-50px);
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes fade-in-top {
+  0% {
+    -webkit-transform: translateY(-50px);
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+/* MEDIA QUERY PAGINA INDEX */
+/* 1024 */
+@media (max-width: 1024px) {
+  .banner__video {
+    width: 64rem;
+    object-fit: cover;
+  }
+  .banner__texto {
+    text-align: center;
+  }
+  .footer__logo img {
+    height: 7rem;
+  }
+}
+/* 768 */
+@media (max-width: 768px) {
+  .banner__video {
+    width: 48rem;
+    object-fit: cover;
+  }
+  .banner__texto {
+    font-size: 1.9rem;
+    text-align: center;
+  }
+  .noticias__container h4 {
+    font-size: 1.1rem;
+  }
+}
+/* 425 */
+@media (max-width: 425px) {
+  .banner__video {
+    width: 26.5625rem;
+    object-fit: cover;
+  }
+  .header__navbarLogo--index {
+    display: none;
+  }
+  .header__menuNav--index {
+    flex-wrap: wrap;
+    gap: 1.4375rem;
+  }
+  .header__menuNav--index li a {
+    font-size: 1.5rem;
+  }
+  .noticias__grid-container {
+    display: block;
+  }
+  .banner__texto {
+    font-size: 1.6rem;
+  }
+  .noticias__container article {
+    margin-bottom: 0.9375rem;
+  }
+  .noticias__imagenPrincipal {
+    height: 13rem;
+  }
+  .footer__container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: "logo redes" "logo contacto";
+    gap: 0.625rem;
+  }
+  .footer__logo {
+    grid-area: logo;
+    display: flex;
+    align-items: center;
+  }
+  .footer__redes {
+    grid-area: redes;
+  }
+  .footer__contacto {
+    grid-area: contacto;
+  }
+  .footer__logo img {
+    height: 9rem;
+  }
+}
+/* 320 */
+@media (max-width: 320px) {
+  .banner__video {
+    width: 20rem;
+    object-fit: cover;
+  }
+  .header__menuNav--index li a {
+    font-size: 1.3rem;
+  }
+  .banner__texto {
+    font-size: 1.3rem;
+  }
+  .footer__logo img {
+    height: 8rem;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */
