@@ -1,0 +1,85 @@
+.formulario{
+    background-image: url(https://soymotor.com/sites/default/files/imagenes/article/alex-alonso1.jpg);
+    width: 100%;
+    height: auto;
+    background-size: cover;
+    background-repeat: no-repeat;
+    @include flex(none, column, center, center, none);
+    min-height: 100vh;
+    text-align: center;
+    position: relative;
+}
+
+.formulario__textoFormulario {
+    h1{
+        font-weight: 600;
+        font-family: "Goldman", sans-serif;
+        font-size: 3rem;
+    }
+        p{
+            font-family: "Goldman", sans-serif;
+            font-size: 1.1rem;
+        }
+}
+
+.navbar{
+    background-color: #090809;
+}
+
+.nav-link{
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+    margin: 0 .4375rem;
+    font-family: "Rajdhani", sans-serif;
+    font-size: 1.375rem;
+    font-weight: 500;
+
+    &:hover{
+        color: red;
+    }
+}
+
+.navbar-nav {
+    margin: auto;
+}
+
+label{
+    display: block;
+    margin: .625rem .3125rem;
+    font-weight: 600;
+}
+
+option{
+    font-weight: 500;
+}
+
+.formulario__contenedor {
+    background: #00000099;
+    padding: 1.25rem;
+    border-radius: .75rem;
+    width: 100%;
+    max-width: 21.875rem;
+    margin: 0 auto;
+    box-sizing: border-box;
+    text-align: left;
+    margin-bottom: 1rem;
+}
+
+.formulario__contenedor .btn {
+    width: 100%;
+    font-weight: bold;
+}
+
+.btn{
+    margin-top: 1rem;
+}
+
+.formulario__contenedor input,
+.formulario__contenedor select {
+    width: 100%;
+    margin-bottom: .75rem;
+    padding: .5rem;
+    border: none;
+    border-radius: .375rem;
+}

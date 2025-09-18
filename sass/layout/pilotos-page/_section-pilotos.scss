@@ -1,10 +1,10 @@
 .pilotos{
     margin: .9375rem;
 
-    h1{
+    .pilotos__textoInicio h1{
         font-size: 1.8rem;
     }
-        p{
+    .pilotos__textoInicio p{
         font-size: 1.2rem;
     }
 }
@@ -139,6 +139,3 @@
     border-radius: .3125rem;
     z-index: 3;
 }
-
-
-
