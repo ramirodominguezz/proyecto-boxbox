@@ -3,8 +3,7 @@
     padding: 2.5rem 1.25rem;
 
     .footer__container{
-        display: flex;
-        justify-content: space-between;
+        @include flex(none, none, space-between, none, none);
         max-width: 75rem;
         margin: auto;
     }
@@ -33,10 +32,10 @@
                         }    
                     }
                     .footer__redes ul li a:hover{
-                        color: red;
+                        color: $color-principal;
                     }
                         .footer__contacto ul li a:hover{
-                            color: red;
+                            color: $color-principal;
                         }
                             .footer__abajo{
                                 border-top: .0625rem solid #333;

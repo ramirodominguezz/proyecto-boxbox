@@ -1,10 +1,8 @@
 .calendario{
-    display: flex;
+    @include flex(wrap, none, center, none, 1.25rem);
     gap: 1.25rem;
-    justify-content: center;
     padding: 1.25rem;
     background-color: #000;
-    flex-wrap: wrap;
 
     .calendario__textoCalendario{
         width: 100%;

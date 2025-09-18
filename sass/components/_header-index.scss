@@ -6,26 +6,21 @@
     z-index: 1;
     overflow: hidden;
         .header__navBar--index{
-            display: flex;
+            @include flex(none, none, space-between, center, none);
             background: transparent;
-            justify-content: space-between;
-            align-items: center;
             padding: .625rem .9375rem;
         }
         .header__navbarLogo--index{
             height: 4.375rem;
         }
             .header__navBar--index{
-                display: flex;
+                @include flex(none, none, space-between, center, none);
                 background: transparent;
-                justify-content: space-between;
-                align-items: center;
                 padding: .625rem .9375rem;
             }
                 .header__menuNav--index{
+                    @include flex(none, none, center, none, none);
                     flex: 1;
-                    display: flex;
-                    justify-content: center;
                     gap: 1.875rem;
                 }
                     .header__menuNav--index a{

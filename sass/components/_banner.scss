@@ -15,12 +15,9 @@
         filter:brightness(40%);
     }
         .banner__texto{
+            @include flex(none, column, center, center, none);
             position: relative;
             z-index: 1;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
             height: 100%;
             font-size: 2rem;
         }

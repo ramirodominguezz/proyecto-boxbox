@@ -1,18 +1,15 @@
 .header{
     .header__navBar{
-        display: flex;
+        @include flex(none, none, space-between, center, none);
         background-color: #090809;
-        justify-content: space-between;
-        align-items: center;
         padding: .625rem .9375rem;
     }
         .header__navbarLogo{
             height: 4.375rem;
         }
             .header__menuNav{
+                @include flex(none, none, center, none, none);
                 flex: 1;
-                display: flex;
-                justify-content: center;
                 gap: 1.875rem;
             }
                 .header__menuNav a{

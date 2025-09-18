@@ -14,8 +14,7 @@
 }
 
 .tarjetas__tarjeta--header{
-    display: flex;
-    justify-content: space-between;
+    @include flex (none, none, space-between, none, none);
 }
 
 .tarjetas__pilotos--equipos{
@@ -30,14 +29,10 @@
 }
 
 .tarjetas__pilotos--piloto{
-    display: flex;
-    align-items: center;
+    @include flex(none, none, none, center, .5rem);
     margin-top: -0.625rem;
-    gap: .5rem;
         p{
-            
             font-size: 0.9rem;
-            
         }
         span{
             font-weight: bolder;
