@@ -12,7 +12,8 @@
 }
 
 .calendarioGeneral__tarjetas{
-    @include grid (repeat(2, 1fr), none, center, none, 3.125rem);
+    @include grid (repeat(2, 1fr), none, none, none, 3.125rem);
+    justify-items: center;
     max-width: 75rem;
     margin: 0 auto;
     margin-top: 1.25rem;
@@ -25,7 +26,8 @@
 }
 
 .calendario__pais{
-    margin: 0;
+    @include flex(none, none, none, center, .625rem);
+    margin: .25rem 0;
     font-size: .875rem;
     color: #bbb;
     font-weight: 600;
@@ -71,3 +73,5 @@
         transform: scale(1.01);
     }
 }
+
+

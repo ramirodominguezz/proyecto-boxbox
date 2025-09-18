@@ -543,9 +543,10 @@ td {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: none;
-  justify-content: center;
+  justify-content: none;
   align-content: none;
   gap: 3.125rem;
+  justify-items: center;
   max-width: 75rem;
   margin: 0 auto;
   margin-top: 1.25rem;
@@ -563,7 +564,13 @@ td {
 }
 
 .calendario__pais {
-  margin: 0;
+  display: flex;
+  flex-wrap: none;
+  flex-direction: none;
+  justify-content: none;
+  align-items: center;
+  gap: 0.625rem;
+  margin: 0.25rem 0;
   font-size: 0.875rem;
   color: #bbb;
   font-weight: 600;
