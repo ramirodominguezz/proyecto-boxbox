@@ -64,7 +64,7 @@
 .calendario__tarjeta--actual{
     width: 31.25rem;
     border-radius: .75rem;
-    background: #a81212;
+    background: $calendario-actual;
     padding: 1.25rem;
     cursor: pointer;
     transition: 0.2s ease;
