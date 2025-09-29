@@ -1,6 +1,6 @@
 // UTILITES
-@import './utilities/variables';
-@import './utilities/mixins';
+@import './abstracts/variables';
+@import './abstracts/mixins';
 
 // BASE
 @import './base/reset';
@@ -9,6 +9,7 @@
 // LAYOUT
 @import './layout/body.scss';
 @import './layout/index/section-noticias';
+@import './layout/index/grid-noticias';
 @import './layout/footer';
 @import './layout/pilotos-page/section-pilotos';
 @import './layout/equipos-page/section-equipos';
@@ -19,11 +20,14 @@
 @import './components/header-general';
 @import './components/index/header-index';
 @import './components/index/banner';
-@import './components/index/grid-noticias';
 @import './components/tarjetas';
-@import './components/clasificacion/tabla';
-@import './components/calendario/tarjetasinicio-calendario';
-@import './components/calendario/tarjetas-calendario';
+@import './components/pilotos-page/tarjetas-pilotos';
+@import './components/pilotos-page/estilos-tarjetas';
+@import './components/equipos-page/tarjetas-equipos';
+@import './components/clasificacion-page/tabla';
+@import './components/calendario-page/tarjetasinicio-calendario';
+@import './components/calendario-page/tarjetas-calendario';
+@import './components/calendario-page/tarjetas-calendario-actual';
 @import './components/animaciones';
 
 // MEDIA-QUERY

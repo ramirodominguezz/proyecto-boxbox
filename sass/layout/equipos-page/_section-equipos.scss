@@ -12,34 +12,3 @@
 .textoEquipos h1{
     font-size: 1.5rem;
 }
-
-.tarjetas__tarjeta--header{
-    @include flex (none, none, space-between, none, none);
-}
-
-.tarjetas__pilotos--equipos{
-    display: flex;
-    gap: 1.25rem;
-    margin: .625rem 0 1.25rem 0;
-
-    .tarjetas__pilotos--piloto img{
-        width: 1.5rem;
-        border-radius: 25%;
-    }
-}
-
-.tarjetas__pilotos--piloto{
-    @include flex(none, none, none, center, .5rem);
-    margin-top: -0.625rem;
-        p{
-            font-size: 0.9rem;
-        }
-        span{
-            font-weight: bolder;
-            text-transform: uppercase;
-        }
-}
-
-.tarjetas__auto img{
-    width: 95%;
-}

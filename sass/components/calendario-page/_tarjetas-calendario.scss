@@ -61,17 +61,4 @@
         }
 }
 
-.calendario__tarjeta--actual{
-    width: 34rem;
-    border-radius: .75rem;
-    background: $calendario-actual;
-    padding: 1.25rem;
-    cursor: pointer;
-    transition: 0.2s ease;
-
-    &:hover{
-        transform: scale(1.01);
-    }
-}
-
 

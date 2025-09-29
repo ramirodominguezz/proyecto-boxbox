@@ -1,0 +1,97 @@
+.tarjetas__tarjeta--mclaren{
+    width: 34rem;
+    height: 15rem;
+    border-radius: .75rem;
+    background: $color-mclaren;
+    position: relative;
+    overflow: hidden;
+    padding: 1.25rem;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s ease;
+
+    &:hover{
+        transform: scale(1.01);
+    }
+}
+
+.tarjetas__tarjeta--ferrari{
+    @extend .tarjetas__tarjeta--mclaren;
+    background: $color-ferrari;
+
+    &:hover{
+        transform: scale(1.01);
+    }
+}
+
+.tarjetas__tarjeta--mercedes{
+    @extend .tarjetas__tarjeta--mclaren;
+    background: $color-mercedes;   
+
+    &:hover{
+        transform: scale(1.01);
+    }
+}
+
+.tarjetas__tarjeta--redbull{
+    @extend .tarjetas__tarjeta--mclaren;
+    background: $color-redbull;
+
+    &:hover{
+        transform: scale(1.01);
+    }
+}
+
+.tarjetas__tarjeta--williams{
+    @extend .tarjetas__tarjeta--mclaren;
+    background: $color-williams;
+
+    &:hover{
+        transform: scale(1.01);
+    }
+}
+
+.tarjetas__tarjeta--astonmartin{
+    @extend .tarjetas__tarjeta--mclaren;
+    background: $color-astonmartin;
+
+    &:hover{
+        transform: scale(1.01);
+    }
+}
+
+.tarjetas__tarjeta--kick{
+    @extend .tarjetas__tarjeta--mclaren;
+    background: $color-kick;
+
+    &:hover{
+        transform: scale(1.01);
+    }
+}
+
+.tarjetas__tarjeta--vcarb{
+    @extend .tarjetas__tarjeta--mclaren;
+    background: $color-vcarb;
+
+    &:hover{
+        transform: scale(1.01);
+    }
+}
+
+.tarjetas__tarjeta--haas{
+    @extend .tarjetas__tarjeta--mclaren;
+    background: $color-haas;
+
+    &:hover{
+        transform: scale(1.01);
+    }
+}
+
+.tarjetas__tarjeta--alpine{
+    @extend .tarjetas__tarjeta--mclaren;
+    background: $color-alpine;
+
+    &:hover{
+        transform: scale(1.01);
+    }
+}
