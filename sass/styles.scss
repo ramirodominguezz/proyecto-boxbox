@@ -8,7 +8,7 @@
 
 // LAYOUT
 @import './layout/body.scss';
-@import './layout/section-noticias';
+@import './layout/index/section-noticias';
 @import './layout/footer';
 @import './layout/pilotos-page/section-pilotos';
 @import './layout/equipos-page/section-equipos';
@@ -16,13 +16,14 @@
 @import './layout/newsletter-page/newsletter';
 
 // COMPONENTS
-@import './components/header-general.scss';
-@import './components/header-index';
-@import './components/banner';
+@import './components/header-general';
+@import './components/index/header-index';
+@import './components/index/banner';
+@import './components/index/grid-noticias';
 @import './components/tarjetas';
-@import './components/tabla';
-@import './components/tarjetasinicio-calendario';
-@import './components/tarjetas-calendario';
+@import './components/clasificacion/tabla';
+@import './components/calendario/tarjetasinicio-calendario';
+@import './components/calendario/tarjetas-calendario';
 @import './components/animaciones';
 
 // MEDIA-QUERY

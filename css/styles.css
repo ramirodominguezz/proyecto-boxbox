@@ -4,7 +4,7 @@
   margin: 0;
   text-decoration: none;
   list-style: none;
-  box-sizing: content-box;
+  box-sizing: border-box;
 }
 
 body {
@@ -61,30 +61,6 @@ body {
   background: linear-gradient(to top, rgb(0, 0, 0), rgba(0, 0, 0, 0));
   margin: 0;
   border-radius: 0 0 0.5rem 0.5rem;
-}
-.noticias .noticias__grid-container {
-  display: grid;
-  grid-template-columns: 2fr 1fr 1fr;
-  grid-template-rows: repeat(2, 12.5rem);
-  justify-content: none;
-  align-content: none;
-  gap: 0.9375rem;
-  grid-template-areas: "principal      noticia1    noticia2" "principal      noticia3    noticia4";
-}
-.noticias .grid_item1 {
-  grid-area: principal;
-}
-.noticias .grid_item2 {
-  grid-area: noticia1;
-}
-.noticias .grid_item3 {
-  grid-area: noticia2;
-}
-.noticias .grid_item4 {
-  grid-area: noticia3;
-}
-.noticias .grid_item5 {
-  grid-area: noticia4;
 }
 
 .footer {
@@ -145,8 +121,8 @@ body {
 }
 
 .tarjetas__tarjeta--mclaren, .tarjetas__tarjeta--alpine, .tarjetas__tarjeta--haas, .tarjetas__tarjeta--vcarb, .tarjetas__tarjeta--kick, .tarjetas__tarjeta--astonmartin, .tarjetas__tarjeta--williams, .tarjetas__tarjeta--redbull, .tarjetas__tarjeta--mercedes, .tarjetas__tarjeta--ferrari {
-  width: 31.25rem;
-  height: 12.5rem;
+  width: 34rem;
+  height: 15rem;
   border-radius: 0.75rem;
   background: linear-gradient(90deg, #d35400 0%, #e67e22 100%);
   position: relative;
@@ -241,7 +217,7 @@ body {
 
 .tarjetas__piloto {
   position: absolute;
-  bottom: 0;
+  top: 0;
   right: 1.25rem;
   width: 45%;
   z-index: 2;
@@ -513,7 +489,7 @@ option {
 .banner {
   position: relative;
   width: 100%;
-  height: 120vh;
+  height: 105vh;
   overflow: hidden;
 }
 .banner .banner__video {
@@ -548,6 +524,36 @@ option {
   font-family: "Goldman", sans-serif;
   font-weight: bold;
   color: white;
+}
+
+.noticias__grid-container {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  grid-template-rows: repeat(2, 12.5rem);
+  justify-content: none;
+  align-content: none;
+  gap: 0.9375rem;
+  grid-template-areas: "principal      noticia1    noticia2" "principal      noticia3    noticia4";
+}
+
+.grid_item1 {
+  grid-area: principal;
+}
+
+.grid_item2 {
+  grid-area: noticia1;
+}
+
+.grid_item3 {
+  grid-area: noticia2;
+}
+
+.grid_item4 {
+  grid-area: noticia3;
+}
+
+.grid_item5 {
+  grid-area: noticia4;
 }
 
 .tarjetas {
@@ -652,7 +658,7 @@ td {
 }
 
 .calendario__tarjeta {
-  width: 31.25rem;
+  width: 34rem;
   border-radius: 0.75rem;
   background: #0a0a0a;
   padding: 1.25rem;
@@ -733,7 +739,7 @@ td {
 }
 
 .calendario__tarjeta--actual {
-  width: 31.25rem;
+  width: 34rem;
   border-radius: 0.75rem;
   background: #a81212;
   padding: 1.25rem;

@@ -1,0 +1,27 @@
+.noticias__grid-container{
+        @include grid(2fr 1fr 1fr, repeat(2, 12.5rem), none, none, .9375rem);
+        grid-template-areas:
+        "principal      noticia1    noticia2"
+        "principal      noticia3    noticia4"
+        ;
+    }
+
+    .grid_item1{
+        grid-area: principal;
+    }
+    
+    .grid_item2{
+        grid-area: noticia1;
+    }
+    
+    .grid_item3{
+        grid-area: noticia2;
+    }
+    
+    .grid_item4{
+        grid-area: noticia3;
+    }
+    
+    .grid_item5{
+        grid-area: noticia4;
+    }
