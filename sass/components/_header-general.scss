@@ -8,7 +8,7 @@
             height: 2.6rem;
         }
             .header__menuNav{
-                @include flex(none, none, center, none, none);
+                @include flex(none, none, center, none, none); 
                 flex: 1;
                 gap: 1.875rem;
             }

@@ -522,6 +522,10 @@ body {
   width: 95%;
 }
 
+.celu {
+  display: none;
+}
+
 .clasificacion__table {
   width: 90%;
   margin: 1.25rem auto;
@@ -994,8 +998,75 @@ option {
   .footer__container .footer__logo img {
     height: 5rem;
   }
+}
+/* 1024 */
+@media (max-width: 1024px) {
+  .footer__container .footer__logo img {
+    height: 6rem;
+  }
+}
+/* 768 */
+@media (max-width: 768px) {
+  .tarjetas__tarjeta--header img {
+    height: 2.5rem;
+  }
+  .tarjetas__pilotos--piloto p {
+    font-size: 0.75rem;
+  }
+}
+/* 425 */
+@media (max-width: 425px) {
+  .equipos__textoInicio {
+    text-align: center;
+  }
+  .footer__container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: "logo redes" "logo contacto";
+    gap: 0.625rem;
+  }
+  .footer__container .footer__logo {
+    grid-area: logo;
+    display: flex;
+    align-items: center;
+  }
+  .footer__container .footer__logo img {
+    height: 5rem;
+  }
   .footer__container .footer__redes {
-    margin-left: 1rem;
+    grid-area: redes;
+  }
+  .footer__container .footer__contacto {
+    grid-area: contacto;
+  }
+}
+/* 320 */
+@media (max-width: 320px) {
+  .tarjetas__tarjeta--header img {
+    height: 2.2rem;
+  }
+  .tarjetas__tarjeta--header h2 {
+    font-size: 1.1rem;
+    white-space: nowrap;
+  }
+  .tarjetas__pilotos--piloto p {
+    font-size: 0.7rem;
+  }
+  .footer__container .footer__logo img {
+    height: 5rem;
+  }
+}
+/* 1024 */
+@media (max-width: 1024px) {
+  .footer__container .footer__logo img {
+    height: 6rem;
+  }
+}
+/* 768 */
+/* 425 */
+@media (max-width: 425px) {
+  .escritorio {
+    display: none;
   }
 }
 
