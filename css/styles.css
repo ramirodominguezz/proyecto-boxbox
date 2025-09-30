@@ -108,7 +108,7 @@ body {
   margin: auto;
 }
 .footer .footer__logo img {
-  height: 7.5rem;
+  height: 6rem;
 }
 .footer .footer__container h5 {
   font-size: 1.25rem;
@@ -209,10 +209,12 @@ body {
   font-weight: 600;
   font-family: "Goldman", sans-serif;
   font-size: 3rem;
+  text-shadow: 1px 1px 1px black;
 }
 .formulario__textoFormulario p {
   font-family: "Goldman", sans-serif;
   font-size: 1.1rem;
+  text-shadow: 1px 1px 1px black;
 }
 
 .navbar {
@@ -236,46 +238,6 @@ body {
   margin: auto;
 }
 
-label {
-  display: block;
-  margin: 0.625rem 0.3125rem;
-  font-weight: 600;
-}
-
-option {
-  font-weight: 500;
-}
-
-.formulario__contenedor {
-  background: rgba(0, 0, 0, 0.6);
-  padding: 1.25rem;
-  border-radius: 0.75rem;
-  width: 100%;
-  max-width: 21.875rem;
-  margin: 0 auto;
-  box-sizing: border-box;
-  text-align: left;
-  margin-bottom: 1rem;
-}
-
-.formulario__contenedor .btn {
-  width: 100%;
-  font-weight: bold;
-}
-
-.btn {
-  margin-top: 1rem;
-}
-
-.formulario__contenedor input,
-.formulario__contenedor select {
-  width: 100%;
-  margin-bottom: 0.75rem;
-  padding: 0.5rem;
-  border: none;
-  border-radius: 0.375rem;
-}
-
 .header .header__navBar {
   display: flex;
   flex-wrap: none;
@@ -284,10 +246,10 @@ option {
   align-items: center;
   gap: none;
   background-color: #090809;
-  padding: 0.625rem 0.9375rem;
+  padding: 0.7rem 0.9rem;
 }
 .header .header__navbarLogo {
-  height: 4.375rem;
+  height: 3rem;
 }
 .header .header__menuNav {
   display: flex;
@@ -328,7 +290,7 @@ option {
   padding: 0.625rem 0.9375rem;
 }
 .header--index .header__navbarLogo--index {
-  height: 4.375rem;
+  height: 3rem;
 }
 .header--index .header__navBar--index {
   display: flex;
@@ -338,7 +300,7 @@ option {
   align-items: center;
   gap: none;
   background: transparent;
-  padding: 0.625rem 0.9375rem;
+  padding: 0.7rem 0.9rem;
 }
 .header--index .header__menuNav--index {
   display: flex;
@@ -748,6 +710,46 @@ td {
 }
 .calendario__tarjeta--actual:hover {
   transform: scale(1.01);
+}
+
+label {
+  display: block;
+  margin: 0.625rem 0.3125rem;
+  font-weight: 700;
+}
+
+option {
+  font-weight: 500;
+}
+
+.formulario__contenedor {
+  background: rgba(0, 0, 0, 0.6);
+  padding: 1.25rem;
+  border-radius: 0.75rem;
+  width: 100%;
+  max-width: 21.875rem;
+  margin: 0 auto;
+  box-sizing: border-box;
+  text-align: left;
+  margin-bottom: 1rem;
+}
+
+.formulario__contenedor .btn {
+  width: 100%;
+  font-weight: bold;
+}
+
+.btn {
+  margin-top: 1rem;
+}
+
+.formulario__contenedor input,
+.formulario__contenedor select {
+  width: 100%;
+  margin-bottom: 0.75rem;
+  padding: 0.5rem;
+  border: none;
+  border-radius: 0.375rem;
 }
 
 .fade-in-top {

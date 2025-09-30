@@ -2,10 +2,10 @@
     .header__navBar{
         @include flex(none, none, space-between, center, none);
         background-color: #090809;
-        padding: .625rem .9375rem;
+        padding: .7rem .9rem;
     }
         .header__navbarLogo{
-            height: 4.375rem;
+            height: 3rem;
         }
             .header__menuNav{
                 @include flex(none, none, center, none, none);

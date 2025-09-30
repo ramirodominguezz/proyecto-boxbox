@@ -1,0 +1,39 @@
+label{
+    display: block;
+    margin: .625rem .3125rem;
+    font-weight: 700;
+}
+
+option{
+    font-weight: 500;
+}
+
+.formulario__contenedor {
+    background: #00000099;
+    padding: 1.25rem;
+    border-radius: .75rem;
+    width: 100%;
+    max-width: 21.875rem;
+    margin: 0 auto;
+    box-sizing: border-box;
+    text-align: left;
+    margin-bottom: 1rem;
+}
+
+.formulario__contenedor .btn {
+    width: 100%;
+    font-weight: bold;
+}
+
+.btn{
+    margin-top: 1rem;
+}
+
+.formulario__contenedor input,
+.formulario__contenedor select {
+    width: 100%;
+    margin-bottom: .75rem;
+    padding: .5rem;
+    border: none;
+    border-radius: .375rem;
+}
