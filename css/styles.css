@@ -246,10 +246,10 @@ body {
   align-items: center;
   gap: none;
   background-color: #090809;
-  padding: 0.7rem 0.9rem;
+  padding: 0.7rem 1.3rem;
 }
 .header .header__navbarLogo {
-  height: 3rem;
+  height: 2.6rem;
 }
 .header .header__menuNav {
   display: flex;
@@ -287,20 +287,10 @@ body {
   align-items: center;
   gap: none;
   background: transparent;
-  padding: 0.625rem 0.9375rem;
+  padding: 0.7rem 1.3rem;
 }
 .header--index .header__navbarLogo--index {
-  height: 3rem;
-}
-.header--index .header__navBar--index {
-  display: flex;
-  flex-wrap: none;
-  flex-direction: none;
-  justify-content: space-between;
-  align-items: center;
-  gap: none;
-  background: transparent;
-  padding: 0.7rem 0.9rem;
+  height: 2.6rem;
 }
 .header--index .header__menuNav--index {
   display: flex;
@@ -544,6 +534,7 @@ body {
   object-fit: contain;
   margin-right: 0.625rem;
   vertical-align: middle;
+  background: linear-gradient(90deg, #d35400 0%, #e67e22 100%);
 }
 
 th, td {

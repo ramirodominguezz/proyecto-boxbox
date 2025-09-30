@@ -8,20 +8,15 @@
         .header__navBar--index{
             @include flex(none, none, space-between, center, none);
             background: transparent;
-            padding: .625rem .9375rem;
+            padding: .7rem 1.3rem;
         }
         .header__navbarLogo--index{
-            height: 3rem;
+            height: 2.6rem;
         }
-            .header__navBar--index{
-                @include flex(none, none, space-between, center, none);
-                background: transparent;
-                padding: .7rem .9rem;
-            }
-                .header__menuNav--index{
-                    @include flex(none, none, center, none, none);
-                    flex: 1;
-                    gap: 1.875rem;
+            .header__menuNav--index{
+                @include flex(none, none, center, none, none);
+                flex: 1;
+                gap: 1.875rem;
                 }
                     .header__menuNav--index a{
                         color: white;
