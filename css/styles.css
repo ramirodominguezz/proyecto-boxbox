@@ -1064,10 +1064,5 @@ option {
 }
 /* 768 */
 /* 425 */
-@media (max-width: 425px) {
-  .escritorio {
-    display: none;
-  }
-}
 
 /*# sourceMappingURL=styles.css.map */
