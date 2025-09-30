@@ -1,7 +1,8 @@
 /* MEDIA QUERY PAGINA INDEX */
 
 /* 1024 */
-@media (max-width: 1024px){
+@media (max-width: 1024px ){ 
+    // and min-width: 769px
     .banner__video{
         width: 64rem;
         object-fit: cover;
@@ -24,8 +25,13 @@
     }
 
     .banner__texto{
-        font-size: 1.9rem;
+        h1{
+        font-size: 2.6rem;
         text-align: center;
+        }
+        h2{
+            font-size: 2.6rem;
+        }
     }
 
     .noticias__container h4{
@@ -35,6 +41,7 @@
 
 /* 425 */
 @media (max-width: 425px){
+    
     .banner__video{
         width: 26.5625rem;
         object-fit: cover;
@@ -43,12 +50,12 @@
     .header__navbarLogo--index{
         display: none;
     }
-    
+
     .header__menuNav--index{
         flex-wrap: wrap;
         gap: 1.4375rem;
     }
-
+    
     .header__menuNav--index li a{
         font-size: 1.5rem;
     }
@@ -58,7 +65,13 @@
     }
 
     .banner__texto{
-        font-size: 1.6rem;
+        h1{
+        font-size: 2.1rem;
+        text-align: center;
+        }
+        h2{
+            font-size: 2rem;
+        }
     }
 
     .noticias__container article{

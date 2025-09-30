@@ -792,9 +792,12 @@ option {
     width: 48rem;
     object-fit: cover;
   }
-  .banner__texto {
-    font-size: 1.9rem;
+  .banner__texto h1 {
+    font-size: 2.6rem;
     text-align: center;
+  }
+  .banner__texto h2 {
+    font-size: 2.6rem;
   }
   .noticias__container h4 {
     font-size: 1.1rem;
@@ -819,8 +822,12 @@ option {
   .noticias__grid-container {
     display: block;
   }
-  .banner__texto {
-    font-size: 1.6rem;
+  .banner__texto h1 {
+    font-size: 2.1rem;
+    text-align: center;
+  }
+  .banner__texto h2 {
+    font-size: 2rem;
   }
   .noticias__container article {
     margin-bottom: 0.9375rem;
