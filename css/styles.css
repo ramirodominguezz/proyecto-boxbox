@@ -782,8 +782,19 @@ option {
   .banner__texto {
     text-align: center;
   }
-  .footer__logo img {
-    height: 7rem;
+  .noticias__grid-container {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    grid-template-rows: repeat(2, 10rem);
+    justify-content: none;
+    align-content: none;
+    gap: 0.9375rem;
+  }
+  .noticias__container h4 {
+    font-size: 1.1rem;
+  }
+  .footer__container .footer__logo img {
+    height: 6rem;
   }
 }
 /* 768 */
@@ -800,7 +811,7 @@ option {
     font-size: 2.6rem;
   }
   .noticias__container h4 {
-    font-size: 1.1rem;
+    font-size: 1rem;
   }
 }
 /* 425 */
@@ -809,22 +820,21 @@ option {
     width: 26.5625rem;
     object-fit: cover;
   }
-  .header__navbarLogo--index {
+  .header--index .header__navbarLogo--index {
     display: none;
   }
-  .header__menuNav--index {
+  .header--index .header__menuNav--index {
     flex-wrap: wrap;
     gap: 1.4375rem;
   }
-  .header__menuNav--index li a {
-    font-size: 1.5rem;
+  .header--index .header__menuNav--index a {
+    font-size: 1.3rem;
   }
   .noticias__grid-container {
     display: block;
   }
   .banner__texto h1 {
     font-size: 2.1rem;
-    text-align: center;
   }
   .banner__texto h2 {
     font-size: 2rem;
@@ -841,19 +851,19 @@ option {
     grid-template-areas: "logo redes" "logo contacto";
     gap: 0.625rem;
   }
-  .footer__logo {
+  .footer__container .footer__logo {
     grid-area: logo;
     display: flex;
     align-items: center;
+  }
+  .footer__container .footer__logo img {
+    height: 5rem;
   }
   .footer__redes {
     grid-area: redes;
   }
   .footer__contacto {
     grid-area: contacto;
-  }
-  .footer__logo img {
-    height: 9rem;
   }
 }
 /* 320 */
@@ -862,14 +872,130 @@ option {
     width: 20rem;
     object-fit: cover;
   }
-  .header__menuNav--index li a {
+  .header--index .header__menuNav--index a {
+    font-size: 1.2rem;
+  }
+  .banner__texto h1 {
+    font-size: 1.8rem;
+  }
+  .banner__texto h2 {
+    font-size: 1.8rem;
+  }
+  .footer__container .footer__logo img {
+    height: 5rem;
+  }
+  .footer__container .footer__redes {
+    margin-left: 1rem;
+  }
+}
+/* 1024 */
+@media (max-width: 1024px) {
+  .tarjetas__tarjeta--mclaren, .tarjetas__tarjeta--ferrari, .tarjetas__tarjeta--mercedes, .tarjetas__tarjeta--redbull, .tarjetas__tarjeta--williams, .tarjetas__tarjeta--astonmartin, .tarjetas__tarjeta--kick, .tarjetas__tarjeta--vcarb, .tarjetas__tarjeta--haas, .tarjetas__tarjeta--alpine {
+    width: 28rem;
+  }
+  .tarjetas__tarjeta--mclaren .tarjetas__piloto, .tarjetas__tarjeta--ferrari .tarjetas__piloto, .tarjetas__tarjeta--mercedes .tarjetas__piloto, .tarjetas__tarjeta--redbull .tarjetas__piloto, .tarjetas__tarjeta--williams .tarjetas__piloto, .tarjetas__tarjeta--astonmartin .tarjetas__piloto, .tarjetas__tarjeta--kick .tarjetas__piloto, .tarjetas__tarjeta--vcarb .tarjetas__piloto, .tarjetas__tarjeta--haas .tarjetas__piloto, .tarjetas__tarjeta--alpine .tarjetas__piloto {
+    width: 50%;
+    top: 1rem;
+  }
+  .footer__container .footer__logo img {
+    height: 6rem;
+  }
+}
+/* 768 */
+@media (max-width: 768px) {
+  .tarjetas__tarjeta--mclaren, .tarjetas__tarjeta--ferrari, .tarjetas__tarjeta--mercedes, .tarjetas__tarjeta--redbull, .tarjetas__tarjeta--williams, .tarjetas__tarjeta--astonmartin, .tarjetas__tarjeta--kick, .tarjetas__tarjeta--vcarb, .tarjetas__tarjeta--haas, .tarjetas__tarjeta--alpine {
+    width: 21rem;
+    height: 12rem;
+  }
+  .tarjetas__tarjeta--mclaren .tarjetas__piloto, .tarjetas__tarjeta--ferrari .tarjetas__piloto, .tarjetas__tarjeta--mercedes .tarjetas__piloto, .tarjetas__tarjeta--redbull .tarjetas__piloto, .tarjetas__tarjeta--williams .tarjetas__piloto, .tarjetas__tarjeta--astonmartin .tarjetas__piloto, .tarjetas__tarjeta--kick .tarjetas__piloto, .tarjetas__tarjeta--vcarb .tarjetas__piloto, .tarjetas__tarjeta--haas .tarjetas__piloto, .tarjetas__tarjeta--alpine .tarjetas__piloto {
+    left: 9.5rem;
+    width: 53%;
+  }
+  .tarjetas__tarjeta--info h2 {
+    font-size: 1.15rem;
+  }
+  .tarjetas__tarjeta--info .tarjetas__equipo {
+    font-size: 1rem;
+  }
+}
+/* 425 */
+@media (max-width: 425px) {
+  .header .header__navbarLogo {
+    display: none;
+  }
+  .header .header__menuNav {
+    flex-wrap: wrap;
+    gap: 1.4375rem;
+  }
+  .header .header__menuNav a {
     font-size: 1.3rem;
   }
-  .banner__texto {
-    font-size: 1.3rem;
+  .pilotos__textoInicio {
+    text-align: center;
   }
-  .footer__logo img {
-    height: 8rem;
+  .tarjetas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  }
+  .footer__container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: "logo redes" "logo contacto";
+    gap: 0.625rem;
+  }
+  .footer__container .footer__logo {
+    grid-area: logo;
+    display: flex;
+    align-items: center;
+  }
+  .footer__container .footer__logo img {
+    height: 5rem;
+  }
+  .footer__redes {
+    grid-area: redes;
+  }
+  .footer__contacto {
+    grid-area: contacto;
+  }
+}
+/* 320 */
+@media (max-width: 320px) {
+  .header .header__menuNav a {
+    font-size: 1.2rem;
+  }
+  .tarjetas__tarjeta--mclaren, .tarjetas__tarjeta--ferrari, .tarjetas__tarjeta--mercedes, .tarjetas__tarjeta--redbull, .tarjetas__tarjeta--williams, .tarjetas__tarjeta--astonmartin, .tarjetas__tarjeta--kick, .tarjetas__tarjeta--vcarb, .tarjetas__tarjeta--haas, .tarjetas__tarjeta--alpine {
+    width: 18rem;
+    height: 10rem;
+  }
+  .tarjetas__tarjeta--mclaren .tarjetas__piloto, .tarjetas__tarjeta--ferrari .tarjetas__piloto, .tarjetas__tarjeta--mercedes .tarjetas__piloto, .tarjetas__tarjeta--redbull .tarjetas__piloto, .tarjetas__tarjeta--williams .tarjetas__piloto, .tarjetas__tarjeta--astonmartin .tarjetas__piloto, .tarjetas__tarjeta--kick .tarjetas__piloto, .tarjetas__tarjeta--vcarb .tarjetas__piloto, .tarjetas__tarjeta--haas .tarjetas__piloto, .tarjetas__tarjeta--alpine .tarjetas__piloto {
+    left: 7rem;
+    top: 0;
+    width: 57%;
+  }
+  .tarjetas__tarjeta--info h2 {
+    max-width: 10%;
+    font-size: 1.2rem;
+  }
+  .tarjetas__tarjeta--info .tarjetas__equipo {
+    font-size: 0.9rem;
+  }
+  .tarjetas__tarjeta--info .tarjetas__numero {
+    font-size: 1.6rem;
+    position: absolute;
+    top: 4.4rem;
+  }
+  .tarjetas__bandera {
+    height: 1rem;
+    width: 1.5rem;
+    object-fit: cover;
+  }
+  .footer__container .footer__logo img {
+    height: 5rem;
+  }
+  .footer__container .footer__redes {
+    margin-left: 1rem;
   }
 }
 
