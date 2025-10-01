@@ -522,10 +522,6 @@ body {
   width: 95%;
 }
 
-.celu {
-  display: none;
-}
-
 .clasificacion__table {
   width: 90%;
   margin: 1.25rem auto;
@@ -1064,5 +1060,95 @@ option {
 }
 /* 768 */
 /* 425 */
+@media (max-width: 425px) {
+  .clasificacion__icons {
+    display: none;
+  }
+  .footer__container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: "logo redes" "logo contacto";
+    gap: 0.625rem;
+  }
+  .footer__container .footer__logo {
+    grid-area: logo;
+    display: flex;
+    align-items: center;
+  }
+  .footer__container .footer__logo img {
+    height: 5rem;
+  }
+  .footer__redes {
+    grid-area: redes;
+  }
+  .footer__contacto {
+    grid-area: contacto;
+  }
+}
+@media (max-width: 320px) {
+  th {
+    font-size: 0.7rem;
+  }
+  th, td {
+    padding: 0.3rem 0.4rem;
+    text-align: left;
+  }
+  .footer__container .footer__logo img {
+    height: 5rem;
+  }
+}
+@media (max-width: 1024px) {
+  .calendario__tarjetas--grande {
+    width: 28rem;
+  }
+  .calendarioGeneral__tarjetas .calendario__tarjeta {
+    width: 25rem;
+  }
+  .calendarioGeneral__tarjetas .calendario__tarjeta--actual {
+    width: 25rem;
+  }
+  .footer__container .footer__logo img {
+    height: 6rem;
+  }
+}
+@media (max-width: 768px) {
+  .calendario__anterior {
+    display: none;
+  }
+  .calendarioGeneral__tarjetas .calendario__tarjeta {
+    width: 20rem;
+  }
+  .calendarioGeneral__tarjetas .calendario__tarjeta--actual {
+    width: 20rem;
+  }
+  .calendario__info h5 {
+    font-size: 1rem;
+  }
+}
+@media (max-width: 425px) {
+  .calendarioGeneral__tarjetas {
+    display: flex;
+    flex-wrap: none;
+    flex-direction: column;
+    justify-content: none;
+    align-items: center;
+    gap: none;
+  }
+  .calendario__proximo {
+    display: none;
+  }
+  .calendario__tarjetas--grande {
+    width: 25rem;
+  }
+  .calendario__textoCalendario {
+    text-align: center;
+  }
+  .calendarioGeneral__tarjetas .calendario__tarjeta {
+    width: 25rem;
+  }
+  .calendarioGeneral__tarjetas .calendario__tarjeta--actual {
+    width: 25rem;
+  }
+}
 
 /*# sourceMappingURL=styles.css.map */
