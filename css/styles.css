@@ -276,41 +276,18 @@ body {
   top: 0;
   left: 0;
   width: 100%;
-  z-index: 1;
-  overflow: hidden;
-}
-.header--index .header__navBar--index {
-  display: flex;
-  flex-wrap: none;
-  flex-direction: none;
-  justify-content: space-between;
-  align-items: center;
-  gap: none;
-  background: transparent;
-  padding: 0.7rem 1.3rem;
+  z-index: 1000;
 }
 .header--index .header__navbarLogo--index {
   height: 2.6rem;
 }
-.header--index .header__menuNav--index {
-  display: flex;
-  flex-wrap: none;
-  flex-direction: none;
-  justify-content: center;
-  align-items: none;
-  gap: none;
-  flex: 1;
-  gap: 1.875rem;
+.header--index .navbar-index {
+  background: transparent;
 }
-.header--index .header__menuNav--index a {
-  color: white;
-  font-size: 1.375rem;
-  font-weight: 500;
-  text-transform: uppercase;
-  display: inline-block;
+.header--index nav ul li a {
   transition: transform 0.2s ease, color 0.2s ease;
 }
-.header--index .header__menuNav--index a:hover {
+.header--index nav ul li a:hover {
   transform: scale(1.1);
   color: red;
 }
@@ -339,20 +316,21 @@ body {
   align-items: center;
   gap: none;
   position: relative;
-  z-index: 1;
   height: 100%;
-  font-size: 2rem;
+  font-size: 4rem;
 }
 .banner .banner__texto h1 {
   font-family: "Goldman", sans-serif;
   font-weight: bold;
   color: red;
   text-shadow: 0 0 2.5rem red;
+  font-size: 4rem;
 }
 .banner .banner__texto h2 {
   font-family: "Goldman", sans-serif;
   font-weight: bold;
   color: white;
+  font-size: 3rem;
 }
 
 .tarjetas {
