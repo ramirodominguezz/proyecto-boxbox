@@ -1140,8 +1140,11 @@ option {
   .calendario__tarjetas--grande {
     width: 25rem;
   }
-  .calendario__textoCalendario {
+  .calendario .calendario__textoCalendario {
     text-align: center;
+  }
+  .calendario .calendario__textoCalendario h1 {
+    font-size: 1.7rem;
   }
   .calendarioGeneral__tarjetas .calendario__tarjeta {
     width: 25rem;
@@ -1171,9 +1174,6 @@ option {
   }
 }
 @media (max-width: 320px) {
-  .calendario .calendario__textoCalendario h1 {
-    font-size: 1.5rem;
-  }
   .calendario__tarjetas--grande {
     width: 17rem;
   }

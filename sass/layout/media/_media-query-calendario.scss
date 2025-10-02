@@ -61,9 +61,15 @@
     width: 25rem;
 }
 
-.calendario__textoCalendario{
-    text-align: center;
-}
+.calendario{
+        .calendario__textoCalendario {
+                text-align: center;
+
+                h1{
+                    font-size: 1.7rem;
+                }
+                }
+    }
 
 .calendarioGeneral__tarjetas{
 
@@ -105,12 +111,7 @@
 
 @media (max-width: 320px){
 
-    .calendario{
 
-    .calendario__textoCalendario h1{
-            font-size: 1.5rem;
-        }
-    }
     .calendario__tarjetas--grande{
     width: 17rem;
     }
