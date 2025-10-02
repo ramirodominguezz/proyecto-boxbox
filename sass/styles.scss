@@ -33,9 +33,9 @@
 
 // MEDIA-QUERY
 @import './layout/media/media-query-general';
-@import './layout/media/media-query-index';
-@import './layout/media/media-query-pilotos';
-@import './layout/media/media-query-equipos';
-@import './layout/media/media-query-clasificacion';
-@import './layout/media/media-query-calendario';
-@import './layout/media/media-query.newsletter';
+@import './layout/media/media-query-paginas/media-query-index';
+@import './layout/media/media-query-paginas/media-query-pilotos';
+@import './layout/media/media-query-paginas/media-query-equipos';
+@import './layout/media/media-query-paginas/media-query-clasificacion';
+@import './layout/media/media-query-paginas/media-query-calendario';
+@import './layout/media/media-query-paginas/media-query.newsletter';

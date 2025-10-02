@@ -1,3 +1,4 @@
+// 1024
 @media (max-width: 1024px){
 
     .calendario__tarjetas--grande{
@@ -15,7 +16,7 @@
     }
 }
 }
-
+// 768
 @media (max-width: 768px){
 
     .calendario__anterior{
@@ -41,6 +42,7 @@
 
 }
 
+// 425
 @media (max-width: 425px){
 
 .calendarioGeneral__tarjetas{
@@ -77,8 +79,26 @@
 }
 }
 
-@media (max-width: 320px){
+// 375
+@media (max-width: 375px){
+    .calendario__tarjetas--grande{
+    width: 20rem;
+}
 
+.calendarioGeneral__tarjetas{
+
+    .calendario__tarjeta{
+        width: 20rem;
+    }
+
+    .calendario__tarjeta--actual{
+        width: 20rem;
+    }
+}
+}
+
+// 320
+@media (max-width: 320px){
 
     .calendario__tarjetas--grande{
     width: 17rem;

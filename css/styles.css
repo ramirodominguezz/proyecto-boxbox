@@ -811,7 +811,7 @@ option {
     object-fit: cover;
   }
   .header--index {
-    background-color: rgba(0, 0, 0, 0.5568627451);
+    background-color: rgba(0, 0, 0, 0.7411764706);
   }
   .banner .banner__texto h1 {
     font-size: 2.6rem;
@@ -970,13 +970,22 @@ option {
     display: none;
   }
 }
+/* 375 */
+@media (max-width: 375px) {
+  .clasificacion__icons {
+    display: none;
+  }
+  th, td {
+    padding: 0.3rem 0.3rem;
+    text-align: left;
+  }
+}
 @media (max-width: 320px) {
   th {
     font-size: 0.7rem;
   }
-  th, td {
-    padding: 0.3rem 0.4rem;
-    text-align: left;
+  tbody td {
+    font-size: 0.95rem;
   }
 }
 @media (max-width: 1024px) {
@@ -1030,6 +1039,17 @@ option {
   }
   .calendarioGeneral__tarjetas .calendario__tarjeta--actual {
     width: 25rem;
+  }
+}
+@media (max-width: 375px) {
+  .calendario__tarjetas--grande {
+    width: 20rem;
+  }
+  .calendarioGeneral__tarjetas .calendario__tarjeta {
+    width: 20rem;
+  }
+  .calendarioGeneral__tarjetas .calendario__tarjeta--actual {
+    width: 20rem;
   }
 }
 @media (max-width: 320px) {
