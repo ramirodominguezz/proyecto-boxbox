@@ -1,19 +1,19 @@
 // 1024
 @media (max-width: 1024px){
-
     .calendario__tarjetas--grande{
-    width: 28rem;
+        width: 28rem;
 }
 
 .calendarioGeneral__tarjetas{
+    @include flex(wrap, none, center, none, 2rem);
+        
+        .calendario__tarjeta{
+            width: 25rem;
+        }
 
-    .calendario__tarjeta{
-        width: 25rem;
-    }
-
-    .calendario__tarjeta--actual{
-        width: 25rem;
-    }
+        .calendario__tarjeta--actual{
+            width: 25rem;
+        }
 }
 }
 // 768
@@ -22,17 +22,6 @@
     .calendario__anterior{
         display: none;
     }
-
-    .calendarioGeneral__tarjetas{
-
-    .calendario__tarjeta{
-        width: 20rem;
-    }
-
-    .calendario__tarjeta--actual{
-        width: 20rem;
-    }
-}
 
 .calendario__info{
     h5{

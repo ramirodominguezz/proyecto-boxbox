@@ -867,6 +867,14 @@ option {
 }
 /* 1024 */
 @media (max-width: 1024px) {
+  .tarjetas {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: none;
+    justify-content: center;
+    align-items: none;
+    gap: 2rem;
+  }
   .tarjetas__tarjeta--mclaren, .tarjetas__tarjeta--ferrari, .tarjetas__tarjeta--mercedes, .tarjetas__tarjeta--redbull, .tarjetas__tarjeta--williams, .tarjetas__tarjeta--astonmartin, .tarjetas__tarjeta--kick, .tarjetas__tarjeta--vcarb, .tarjetas__tarjeta--haas, .tarjetas__tarjeta--alpine {
     width: 28rem;
   }
@@ -897,14 +905,7 @@ option {
   .pilotos__textoInicio {
     text-align: center;
   }
-  .tarjetas {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 2rem;
-  }
 }
-/* 425 */
 /* 320 */
 @media (max-width: 320px) {
   .header .header__menuNav a {
@@ -993,6 +994,14 @@ option {
   .calendario__tarjetas--grande {
     width: 28rem;
   }
+  .calendarioGeneral__tarjetas {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: none;
+    justify-content: center;
+    align-items: none;
+    gap: 2rem;
+  }
   .calendarioGeneral__tarjetas .calendario__tarjeta {
     width: 25rem;
   }
@@ -1003,12 +1012,6 @@ option {
 @media (max-width: 768px) {
   .calendario__anterior {
     display: none;
-  }
-  .calendarioGeneral__tarjetas .calendario__tarjeta {
-    width: 20rem;
-  }
-  .calendarioGeneral__tarjetas .calendario__tarjeta--actual {
-    width: 20rem;
   }
   .calendario__info h5 {
     font-size: 1rem;
