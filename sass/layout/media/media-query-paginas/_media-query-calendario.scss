@@ -41,11 +41,8 @@
 }
 
 }
-
-// 425
-@media (max-width: 425px){
-
-.calendarioGeneral__tarjetas{
+@media (max-width: 576px){
+    .calendarioGeneral__tarjetas{
     @include flex (none, column, none, center, none);
 }
 

@@ -1,3 +1,4 @@
+/* 1024 */
 @media (max-width: 1024px){ 
     .footer__container{
         .footer__logo img{
@@ -6,10 +7,7 @@
     }
 }
 
-@media (max-width: 768px){
-
-}
-
+/* 425 */
 @media (max-width: 425px){
     .footer__container{
         display: grid;
@@ -38,6 +36,7 @@
     }
 }
 
+/* 320 */
 @media (max-width: 320px){
     .footer__container{
         .footer__logo{

@@ -744,11 +744,13 @@ option {
     opacity: 1;
   }
 }
+/* 1024 */
 @media (max-width: 1024px) {
   .footer__container .footer__logo img {
     height: 5rem;
   }
 }
+/* 425 */
 @media (max-width: 425px) {
   .footer__container {
     display: grid;
@@ -771,6 +773,7 @@ option {
     grid-area: contacto;
   }
 }
+/* 320 */
 @media (max-width: 320px) {
   .footer__container .footer__logo img {
     height: 4.5rem;
@@ -889,8 +892,8 @@ option {
     font-size: 1rem;
   }
 }
-/* 425 */
-@media (max-width: 425px) {
+/* 576 */
+@media (max-width: 576px) {
   .pilotos__textoInicio {
     text-align: center;
   }
@@ -901,6 +904,7 @@ option {
     gap: 2rem;
   }
 }
+/* 425 */
 /* 320 */
 @media (max-width: 320px) {
   .header .header__menuNav a {
@@ -933,7 +937,6 @@ option {
     object-fit: cover;
   }
 }
-/* 1024 */
 /* 768 */
 @media (max-width: 768px) {
   .tarjetas__tarjeta--header img {
@@ -943,8 +946,8 @@ option {
     font-size: 0.75rem;
   }
 }
-/* 425 */
-@media (max-width: 425px) {
+/* 576 */
+@media (max-width: 576px) {
   .equipos__textoInicio {
     text-align: center;
   }
@@ -962,10 +965,8 @@ option {
     font-size: 0.7rem;
   }
 }
-/* 1024 */
-/* 768 */
-/* 425 */
-@media (max-width: 425px) {
+/* 576 */
+@media (max-width: 576px) {
   .clasificacion__icons {
     display: none;
   }
@@ -1013,7 +1014,7 @@ option {
     font-size: 1rem;
   }
 }
-@media (max-width: 425px) {
+@media (max-width: 576px) {
   .calendarioGeneral__tarjetas {
     display: flex;
     flex-wrap: none;

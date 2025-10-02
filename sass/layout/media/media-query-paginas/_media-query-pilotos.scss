@@ -31,9 +31,9 @@
         }
     }
 }
-/* 425 */
-@media (max-width: 425px){
 
+/* 576 */
+@media (max-width: 576px){
     .pilotos__textoInicio{
         text-align: center;
     }
@@ -44,6 +44,12 @@
         align-items: center;
         gap: 2rem;
     }
+}
+
+
+/* 425 */
+@media (max-width: 425px){
+
 }
 
 /* 320 */
