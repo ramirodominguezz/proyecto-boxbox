@@ -226,6 +226,10 @@ body {
   text-shadow: 1px 1px 1px black;
 }
 
+.header__navbarLogo {
+  height: 2.6rem;
+}
+
 .navbar {
   background-color: #090809;
 }
@@ -238,6 +242,7 @@ body {
   font-family: "Rajdhani", sans-serif;
   font-size: 1.375rem;
   font-weight: 500;
+  transition: color 0.1s ease;
 }
 .nav-link:hover {
   color: red;
@@ -245,39 +250,6 @@ body {
 
 .navbar-nav {
   margin: auto;
-}
-
-.header .header__navBar {
-  display: flex;
-  flex-wrap: none;
-  flex-direction: none;
-  justify-content: space-between;
-  align-items: center;
-  gap: none;
-  background-color: #090809;
-  padding: 0.7rem 1.3rem;
-}
-.header .header__navbarLogo {
-  height: 2.6rem;
-}
-.header .header__menuNav {
-  display: flex;
-  flex-wrap: none;
-  flex-direction: none;
-  justify-content: center;
-  align-items: none;
-  gap: none;
-  flex: 1;
-  gap: 1.875rem;
-}
-.header .header__menuNav a {
-  color: white;
-  font-size: 1.375rem;
-  font-weight: 500;
-  text-transform: uppercase;
-}
-.header .header__menuNav a:hover {
-  color: red;
 }
 
 .header--index {
