@@ -95,7 +95,7 @@ body {
 
 .footer {
   background-color: #090808;
-  padding: 2.5rem 1.25rem;
+  padding: 2rem 1.25rem;
 }
 .footer .footer__container {
   display: flex;
@@ -145,6 +145,8 @@ body {
 }
 .pilotos .pilotos__textoInicio h1 {
   font-size: 1.8rem;
+  font-weight: bold;
+  margin-bottom: 0;
 }
 .pilotos .pilotos__textoInicio p {
   font-size: 1.2rem;
@@ -155,6 +157,8 @@ body {
 }
 .equipos .equipos__textoInicio h1 {
   font-size: 1.8rem;
+  font-weight: bold;
+  margin-bottom: 0;
 }
 .equipos p {
   font-size: 1.2rem;
@@ -182,6 +186,11 @@ body {
 }
 .calendario .calendario__textoCalendario h1 {
   font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 0;
+}
+.calendario p {
+  margin-bottom: 0;
 }
 
 .calendarioGeneral {
@@ -351,11 +360,16 @@ body {
   position: relative;
   z-index: 1;
 }
+.tarjetas__tarjeta--info h2 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 0;
+}
 
 .tarjetas__equipo {
   font-size: 1.125rem;
   color: #ddd;
-  margin-bottom: 1.25rem;
+  margin-bottom: 1rem;
 }
 
 .tarjetas__numero {
@@ -490,6 +504,7 @@ body {
 }
 .tarjetas__pilotos--piloto p {
   font-size: 0.9rem;
+  margin: 0;
 }
 .tarjetas__pilotos--piloto span {
   font-weight: bolder;
@@ -557,6 +572,7 @@ td {
 .calendario__contenedor--tarjetas h2 {
   margin: 0.625rem 0;
   font-size: 1.5rem;
+  font-weight: bold;
 }
 
 .calendario__imagen {
@@ -582,6 +598,7 @@ td {
 .calendario__tarjetas--info h3 {
   margin: 0;
   font-size: 1.2rem;
+  font-weight: bold;
 }
 .calendario__tarjetas--info p {
   margin: 0.3125rem 0 0;
@@ -643,7 +660,7 @@ td {
 .calendario__pais h5 {
   margin: 0;
   font-size: 1.25rem;
-  font-weight: 700;
+  font-weight: bold;
 }
 
 .calendario__fecha {
@@ -667,6 +684,11 @@ td {
   width: 80%;
   max-width: 21.875rem;
   height: auto;
+}
+
+.calendario__info h4 {
+  font-size: 1rem;
+  margin: 0;
 }
 
 .calendario__tarjeta--actual {
@@ -750,6 +772,44 @@ option {
     opacity: 1;
   }
 }
+@media (max-width: 1024px) {
+  .footer__container .footer__logo img {
+    height: 5rem;
+  }
+}
+@media (max-width: 425px) {
+  .footer__container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: "logo redes" "logo contacto";
+    gap: 0.625rem;
+  }
+  .footer__container .footer__logo {
+    grid-area: logo;
+    display: flex;
+    align-items: center;
+  }
+  .footer__container .footer__logo img {
+    height: 5rem;
+  }
+  .footer__redes {
+    grid-area: redes;
+  }
+  .footer__contacto {
+    grid-area: contacto;
+  }
+}
+@media (max-width: 320px) {
+  .footer__container .footer__logo img {
+    height: 4.5rem;
+  }
+  .footer__container .footer__logo {
+    margin-right: -1rem;
+  }
+  .footer__container .footer__redes {
+    margin-right: -1.5rem;
+  }
+}
 /* MEDIA QUERY PAGINA INDEX */
 /* 1024 */
 @media (max-width: 1024px) {
@@ -771,9 +831,6 @@ option {
   .noticias__container h4 {
     font-size: 1.1rem;
   }
-  .footer__container .footer__logo img {
-    height: 6rem;
-  }
 }
 /* 768 */
 @media (max-width: 768px) {
@@ -781,12 +838,15 @@ option {
     width: 48rem;
     object-fit: cover;
   }
-  .banner__texto h1 {
+  .header--index {
+    background-color: rgba(0, 0, 0, 0.5568627451);
+  }
+  .banner .banner__texto h1 {
     font-size: 2.6rem;
     text-align: center;
   }
-  .banner__texto h2 {
-    font-size: 2.6rem;
+  .banner .banner__texto h2 {
+    font-size: 2.2rem;
   }
   .noticias__container h4 {
     font-size: 1rem;
@@ -794,27 +854,20 @@ option {
 }
 /* 425 */
 @media (max-width: 425px) {
+  .header--index {
+    background-color: rgba(0, 0, 0, 0.7882352941);
+  }
   .banner__video {
     width: 26.5625rem;
     object-fit: cover;
   }
-  .header--index .header__navbarLogo--index {
-    display: none;
-  }
-  .header--index .header__menuNav--index {
-    flex-wrap: wrap;
-    gap: 1.4375rem;
-  }
-  .header--index .header__menuNav--index a {
-    font-size: 1.3rem;
-  }
   .noticias__grid-container {
     display: block;
   }
-  .banner__texto h1 {
+  .banner .banner__texto h1 {
     font-size: 2.1rem;
   }
-  .banner__texto h2 {
+  .banner .banner__texto h2 {
     font-size: 2rem;
   }
   .noticias__container article {
@@ -823,26 +876,6 @@ option {
   .noticias__imagenPrincipal {
     height: 13rem;
   }
-  .footer__container {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-areas: "logo redes" "logo contacto";
-    gap: 0.625rem;
-  }
-  .footer__container .footer__logo {
-    grid-area: logo;
-    display: flex;
-    align-items: center;
-  }
-  .footer__container .footer__logo img {
-    height: 5rem;
-  }
-  .footer__redes {
-    grid-area: redes;
-  }
-  .footer__contacto {
-    grid-area: contacto;
-  }
 }
 /* 320 */
 @media (max-width: 320px) {
@@ -850,20 +883,11 @@ option {
     width: 20rem;
     object-fit: cover;
   }
-  .header--index .header__menuNav--index a {
-    font-size: 1.2rem;
-  }
-  .banner__texto h1 {
+  .banner .banner__texto h1 {
     font-size: 1.8rem;
   }
-  .banner__texto h2 {
+  .banner .banner__texto h2 {
     font-size: 1.8rem;
-  }
-  .footer__container .footer__logo img {
-    height: 5rem;
-  }
-  .footer__container .footer__redes {
-    margin-left: 1rem;
   }
 }
 /* 1024 */
@@ -874,9 +898,6 @@ option {
   .tarjetas__tarjeta--mclaren .tarjetas__piloto, .tarjetas__tarjeta--ferrari .tarjetas__piloto, .tarjetas__tarjeta--mercedes .tarjetas__piloto, .tarjetas__tarjeta--redbull .tarjetas__piloto, .tarjetas__tarjeta--williams .tarjetas__piloto, .tarjetas__tarjeta--astonmartin .tarjetas__piloto, .tarjetas__tarjeta--kick .tarjetas__piloto, .tarjetas__tarjeta--vcarb .tarjetas__piloto, .tarjetas__tarjeta--haas .tarjetas__piloto, .tarjetas__tarjeta--alpine .tarjetas__piloto {
     width: 50%;
     top: 1rem;
-  }
-  .footer__container .footer__logo img {
-    height: 6rem;
   }
 }
 /* 768 */
@@ -898,16 +919,6 @@ option {
 }
 /* 425 */
 @media (max-width: 425px) {
-  .header .header__navbarLogo {
-    display: none;
-  }
-  .header .header__menuNav {
-    flex-wrap: wrap;
-    gap: 1.4375rem;
-  }
-  .header .header__menuNav a {
-    font-size: 1.3rem;
-  }
   .pilotos__textoInicio {
     text-align: center;
   }
@@ -916,26 +927,6 @@ option {
     flex-direction: column;
     align-items: center;
     gap: 2rem;
-  }
-  .footer__container {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-areas: "logo redes" "logo contacto";
-    gap: 0.625rem;
-  }
-  .footer__container .footer__logo {
-    grid-area: logo;
-    display: flex;
-    align-items: center;
-  }
-  .footer__container .footer__logo img {
-    height: 5rem;
-  }
-  .footer__redes {
-    grid-area: redes;
-  }
-  .footer__contacto {
-    grid-area: contacto;
   }
 }
 /* 320 */
@@ -969,16 +960,8 @@ option {
     width: 1.5rem;
     object-fit: cover;
   }
-  .footer__container .footer__logo img {
-    height: 5rem;
-  }
 }
 /* 1024 */
-@media (max-width: 1024px) {
-  .footer__container .footer__logo img {
-    height: 6rem;
-  }
-}
 /* 768 */
 @media (max-width: 768px) {
   .tarjetas__tarjeta--header img {
@@ -993,26 +976,6 @@ option {
   .equipos__textoInicio {
     text-align: center;
   }
-  .footer__container {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-areas: "logo redes" "logo contacto";
-    gap: 0.625rem;
-  }
-  .footer__container .footer__logo {
-    grid-area: logo;
-    display: flex;
-    align-items: center;
-  }
-  .footer__container .footer__logo img {
-    height: 5rem;
-  }
-  .footer__container .footer__redes {
-    grid-area: redes;
-  }
-  .footer__container .footer__contacto {
-    grid-area: contacto;
-  }
 }
 /* 320 */
 @media (max-width: 320px) {
@@ -1026,41 +989,13 @@ option {
   .tarjetas__pilotos--piloto p {
     font-size: 0.7rem;
   }
-  .footer__container .footer__logo img {
-    height: 5rem;
-  }
 }
 /* 1024 */
-@media (max-width: 1024px) {
-  .footer__container .footer__logo img {
-    height: 6rem;
-  }
-}
 /* 768 */
 /* 425 */
 @media (max-width: 425px) {
   .clasificacion__icons {
     display: none;
-  }
-  .footer__container {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-areas: "logo redes" "logo contacto";
-    gap: 0.625rem;
-  }
-  .footer__container .footer__logo {
-    grid-area: logo;
-    display: flex;
-    align-items: center;
-  }
-  .footer__container .footer__logo img {
-    height: 5rem;
-  }
-  .footer__redes {
-    grid-area: redes;
-  }
-  .footer__contacto {
-    grid-area: contacto;
   }
 }
 @media (max-width: 320px) {
@@ -1070,9 +1005,6 @@ option {
   th, td {
     padding: 0.3rem 0.4rem;
     text-align: left;
-  }
-  .footer__container .footer__logo img {
-    height: 5rem;
   }
 }
 @media (max-width: 1024px) {
@@ -1084,9 +1016,6 @@ option {
   }
   .calendarioGeneral__tarjetas .calendario__tarjeta--actual {
     width: 25rem;
-  }
-  .footer__container .footer__logo img {
-    height: 6rem;
   }
 }
 @media (max-width: 768px) {
@@ -1130,26 +1059,6 @@ option {
   .calendarioGeneral__tarjetas .calendario__tarjeta--actual {
     width: 25rem;
   }
-  .footer__container {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-areas: "logo redes" "logo contacto";
-    gap: 0.625rem;
-  }
-  .footer__container .footer__logo {
-    grid-area: logo;
-    display: flex;
-    align-items: center;
-  }
-  .footer__container .footer__logo img {
-    height: 5rem;
-  }
-  .footer__redes {
-    grid-area: redes;
-  }
-  .footer__contacto {
-    grid-area: contacto;
-  }
 }
 @media (max-width: 320px) {
   .calendario__tarjetas--grande {
@@ -1168,36 +1077,6 @@ option {
     font-size: 0.8rem;
     white-space: nowrap;
   }
-  .footer__container .footer__logo img {
-    height: 5rem;
-  }
-}
-@media (max-width: 1024px) {
-  .footer__container .footer__logo img {
-    height: 6rem;
-  }
-}
-@media (max-width: 425px) {
-  .footer__container {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-areas: "logo redes" "logo contacto";
-    gap: 0.625rem;
-  }
-  .footer__container .footer__logo {
-    grid-area: logo;
-    display: flex;
-    align-items: center;
-  }
-  .footer__container .footer__logo img {
-    height: 5rem;
-  }
-  .footer__redes {
-    grid-area: redes;
-  }
-  .footer__contacto {
-    grid-area: contacto;
-  }
 }
 @media (max-width: 320px) {
   .formulario__textoFormulario h1 {
@@ -1208,35 +1087,6 @@ option {
   }
   .formulario__contenedor {
     width: 85%;
-  }
-  .footer__container {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-areas: "logo redes" "logo contacto";
-    gap: 0.625rem;
-  }
-  .footer__container .footer__logo {
-    grid-area: logo;
-    display: flex;
-    align-items: center;
-  }
-  .footer__container .footer__logo img {
-    height: 5rem;
-  }
-  .footer__redes {
-    grid-area: redes;
-  }
-  .footer__contacto {
-    grid-area: contacto;
-  }
-  .footer__newsletter {
-    margin-right: -1.5rem;
-  }
-  .redes__newsletter {
-    margin-right: -1.5rem;
-  }
-  .footer__container .footer__logo img {
-    height: 5rem;
   }
 }
 

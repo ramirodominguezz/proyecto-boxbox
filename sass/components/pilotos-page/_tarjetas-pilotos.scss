@@ -1,12 +1,18 @@
 .tarjetas__tarjeta--info{
     position: relative;
     z-index: 1;
+
+    h2{
+        font-size: 1.5rem;
+        font-weight: bold;
+        margin-bottom: 0;
+    }
 }
 
 .tarjetas__equipo{
     font-size: 1.125rem;
     color: #ddd;
-    margin-bottom: 1.25rem;
+    margin-bottom: 1rem;
 }
 
 .tarjetas__numero{

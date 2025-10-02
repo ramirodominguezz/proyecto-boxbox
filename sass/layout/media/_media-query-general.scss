@@ -1,0 +1,56 @@
+@media (max-width: 1024px){ 
+    .footer__container{
+        .footer__logo img{
+            height: 5rem;
+        }
+    }
+}
+
+@media (max-width: 768px){
+
+}
+
+@media (max-width: 425px){
+    .footer__container{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas:
+        "logo redes"
+        "logo contacto";
+        gap: .625rem;
+
+            .footer__logo{
+            grid-area: logo;
+            display: flex;
+            align-items: center;
+
+                img{
+                    height: 5rem;
+                }
+            }
+        }
+
+    .footer__redes {
+        grid-area: redes;
+    }
+    .footer__contacto {
+        grid-area: contacto;
+    }
+}
+
+@media (max-width: 320px){
+    .footer__container{
+        .footer__logo{
+            img{
+                height: 4.5rem;
+            }
+        }
+        .footer__logo{
+        margin-right: -1rem
+        }
+
+        .footer__redes{
+            margin-right: -1.5rem;
+        }
+    }
+}

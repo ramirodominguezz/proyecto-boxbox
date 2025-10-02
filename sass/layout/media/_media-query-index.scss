@@ -17,13 +17,6 @@
     .noticias__container h4{
         font-size: 1.1rem;
     }
-
-
-    .footer__container{
-        .footer__logo img{
-            height: 6rem;
-        }
-    }
 }
 
 /* 768 */
@@ -33,16 +26,21 @@
         object-fit: cover;
     }
 
-    .banner__texto{
-        h1{
-        font-size: 2.6rem;
-        text-align: center;
-        }
-        h2{
-            font-size: 2.6rem;
-        }
+    .header--index{
+        background-color: #0000008e
     }
 
+    .banner{
+        .banner__texto{
+            h1{
+            font-size: 2.6rem;
+            text-align: center;
+            }
+            h2{
+                font-size: 2.2rem;
+            }
+        }
+}
     .noticias__container h4{
         font-size: 1rem;
     }
@@ -51,29 +49,20 @@
 /* 425 */
 @media (max-width: 425px){
     
+    .header--index{
+        background-color: #000000c9
+    }
+
     .banner__video{
         width: 26.5625rem;
         object-fit: cover;
-    }
-
-    .header--index{
-        .header__navbarLogo--index{
-        display: none;
-        }
-            .header__menuNav--index{
-            flex-wrap: wrap;
-            gap: 1.4375rem;
-
-            a{
-                font-size: 1.3rem;
-            }
-        }
     }
 
     .noticias__grid-container{
         display: block;
     }
 
+    .banner{
     .banner__texto{
         h1{
         font-size: 2.1rem;
@@ -82,6 +71,7 @@
             font-size: 2rem;
         }
     }
+}
 
     .noticias__container article{
         margin-bottom: .9375rem;
@@ -89,32 +79,6 @@
 
     .noticias__imagenPrincipal{
         height: 13rem;
-    }
-
-    .footer__container{
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-areas:
-        "logo redes"
-        "logo contacto";
-        gap: .625rem;
-
-            .footer__logo{
-            grid-area: logo;
-            display: flex;
-            align-items: center;
-
-                img{
-                    height: 5rem;
-                }
-            }
-        }
-
-    .footer__redes {
-        grid-area: redes;
-    }
-    .footer__contacto {
-        grid-area: contacto;
     }
 }
 
@@ -125,14 +89,7 @@
         object-fit: cover;
     }
 
-    .header--index{
-        .header__menuNav--index{
-            a{
-                font-size: 1.2rem;
-            }
-        }
-    }
-
+    .banner{
     .banner__texto{
         h1{
         font-size: 1.8rem;
@@ -140,16 +97,6 @@
         h2{
             font-size: 1.8rem;
         }
-    }  
-
-    .footer__container{
-        .footer__logo{
-            img{
-                height: 5rem;
-            }
-        }
-        .footer__redes{
-            margin-left: 1rem;
-        }
+        }  
     }
 }

@@ -14,12 +14,6 @@
         width: 25rem;
     }
 }
-
-    .footer__container{
-        .footer__logo img{
-            height: 6rem;
-        }
-    }
 }
 
 @media (max-width: 768px){
@@ -81,32 +75,6 @@
         width: 25rem;
     }
 }
-
-.footer__container{
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-areas:
-        "logo redes"
-        "logo contacto";
-        gap: .625rem;
-
-            .footer__logo{
-            grid-area: logo;
-            display: flex;
-            align-items: center;
-
-                img{
-                    height: 5rem;
-                }
-            }
-        }
-
-    .footer__redes {
-        grid-area: redes;
-    }
-    .footer__contacto {
-        grid-area: contacto;
-    }
 }
 
 @media (max-width: 320px){
@@ -134,12 +102,4 @@
     font-size: .8rem;
     white-space: nowrap;
 }
-
-.footer__container{
-        .footer__logo{
-            img{
-                height: 5rem;
-            }
-        }
-    }
 }
