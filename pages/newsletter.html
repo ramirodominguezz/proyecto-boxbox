@@ -10,11 +10,18 @@
 <body>
     
     <header class="header">
-        <nav class="navbar navbar-expand-lg">
+        <nav class="navbar navbar-expand-lg navbar-dark justify-content-between">
             <div class="container-fluid">
             <a href="../index.html" class="navbar-brand"><img src="../assets/logos/LOGO.png" alt="logoboxbox" class="header__navbarLogo"></a>
-            <div class="collapse navbar-collapse">
-                <ul class="navbar-nav">
+
+            <!-- BOTÓN HAMBURGUESA -->
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto"">
                     <li class="nav-item"><a class="nav-link" href="../index.html">Inicio</a></li>
                     <li class="nav-item"><a class="nav-link" href="pilotos.html">Pilotos</a></li>
                     <li class="nav-item"><a class="nav-link" href="equipos.html">Equipos</a></li>
@@ -36,7 +43,7 @@
         
         <!--Formulario-->
 
-        <div class="formulario__contenedor ">
+        <div class="formulario__contenedor">
             <form action="/submit" method="post">
                 <label for="nombre">Nombre completo</label>
                 <input type="text" name="nombre" id="nombre">
@@ -120,11 +127,11 @@
 
     <footer class="footer">
         <div class="footer__container">
-            <div class="footer__logo">
+            <div class="footer__logo footer__newsletter">
                 <img src="../assets/logos/LOGO.png" alt="logoboxbox">
             </div>
 
-            <div class="footer__redes">
+            <div class="footer__redes redes__newsletter">
                 <ul>
                     <h5>Redes Sociales</h5>
                         <li><a href="https://www.instagram.com/" target="_blank">Instagram</a></li>
