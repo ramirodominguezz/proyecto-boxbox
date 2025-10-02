@@ -75,4 +75,70 @@
         width: 25rem;
     }
 }
+
+.footer__container{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas:
+        "logo redes"
+        "logo contacto";
+        gap: .625rem;
+
+            .footer__logo{
+            grid-area: logo;
+            display: flex;
+            align-items: center;
+
+                img{
+                    height: 5rem;
+                }
+            }
+        }
+
+    .footer__redes {
+        grid-area: redes;
+    }
+    .footer__contacto {
+        grid-area: contacto;
+    }
+}
+
+@media (max-width: 320px){
+
+    .calendario{
+
+    .calendario__textoCalendario h1{
+            font-size: 1.5rem;
+        }
+    }
+    .calendario__tarjetas--grande{
+    width: 17rem;
+    }
+
+    .calendarioGeneral__tarjetas{
+
+    .calendario__tarjeta{
+        width: 17rem;
+    }
+
+    .calendario__tarjeta--actual{
+        width: 17rem;
+    }
+}
+
+.calendario__fecha{
+    background: #1e2533;
+    padding: .3rem .5rem;
+    border-radius: .375rem;
+    font-size: .8rem;
+    white-space: nowrap;
+}
+
+.footer__container{
+        .footer__logo{
+            img{
+                height: 5rem;
+            }
+        }
+    }
 }
