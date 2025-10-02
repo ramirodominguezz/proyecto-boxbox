@@ -971,6 +971,10 @@ option {
   .clasificacion__icons {
     display: none;
   }
+  th, td {
+    padding: 0.3rem 0.3rem;
+    text-align: left;
+  }
 }
 /* 375 */
 @media (max-width: 375px) {
@@ -1030,7 +1034,7 @@ option {
     display: none;
   }
   .calendario__tarjetas--grande {
-    width: 25rem;
+    width: 23rem;
   }
   .calendario .calendario__textoCalendario {
     text-align: center;
@@ -1039,10 +1043,10 @@ option {
     font-size: 1.7rem;
   }
   .calendarioGeneral__tarjetas .calendario__tarjeta {
-    width: 25rem;
+    width: 23rem;
   }
   .calendarioGeneral__tarjetas .calendario__tarjeta--actual {
-    width: 25rem;
+    width: 23rem;
   }
 }
 @media (max-width: 375px) {
