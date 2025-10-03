@@ -21,14 +21,14 @@
             font-size: 4rem;
         }
             .banner__texto h1{
-                font-family: "Goldman", sans-serif;
+                font-family: $font-carrera;
                 font-weight: bold;
                 color: $color-principal;
                 text-shadow: 0 0 2.5rem $color-principal;
                 font-size: 4rem;
             }
                 .banner__texto h2{
-                    font-family: "Goldman", sans-serif;
+                    font-family: $font-carrera;
                     font-weight: bold;
                     color: white;
                     font-size: 3rem;

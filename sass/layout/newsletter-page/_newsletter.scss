@@ -13,12 +13,12 @@
 .formulario__textoFormulario {
     h1{
         font-weight: 600;
-        font-family: "Goldman", sans-serif;
+        font-family: $font-carrera;
         font-size: 3rem;
         text-shadow: 1px 1px 1px black;
     }
         p{
-            font-family: "Goldman", sans-serif;
+            font-family: $font-carrera;
             font-size: 1.1rem;
             text-shadow: 1px 1px 1px black;
         }
