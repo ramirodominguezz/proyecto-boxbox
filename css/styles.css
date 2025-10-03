@@ -975,12 +975,19 @@ option {
     padding: 0.3rem 0.3rem;
     text-align: left;
   }
+  tbody td {
+    max-width: 5rem;
+    font-size: 0.9rem;
+    font-weight: 500;
+  }
+}
+@media (max-width: 576px) {
+  tbody td {
+    max-width: 3rem;
+  }
 }
 /* 375 */
 @media (max-width: 375px) {
-  .clasificacion__icons {
-    display: none;
-  }
   th, td {
     padding: 0.3rem 0.3rem;
     text-align: left;
@@ -992,6 +999,7 @@ option {
   }
   tbody td {
     font-size: 0.95rem;
+    max-width: 5rem;
   }
 }
 @media (max-width: 1024px) {
